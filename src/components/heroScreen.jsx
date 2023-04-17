@@ -15,7 +15,7 @@ const HeroScreen = () => {
           color: "#f5f5f5",
         }}
       >
-        <h1>TDigital gateway to a localized supply chain</h1>
+        <h1>Digital gateway to a localized supply chain</h1>
       </div>
       ;
     </>
