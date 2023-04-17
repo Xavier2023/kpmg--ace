@@ -3,7 +3,7 @@ import "./App.css";
 import Message from "./components/message";
 import Navbar from "./components/navbar";
 import HeroScreen from "./components/heroScreen";
-// import Next from "./components/Next";
+import Next from "./components/Next";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <Message />
       <HeroScreen />
-      {/* <Next /> */}
+      <Next />
     </div>
   );
 }
