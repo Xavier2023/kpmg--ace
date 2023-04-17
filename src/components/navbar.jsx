@@ -9,9 +9,9 @@ function Navbar() {
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <div>
-            <a className="navbar-brand" href=" ">
+            <Link className="navbar-brand" to="/">
               <img src={dan} alt="Dan" />
-            </a>
+            </Link>
           </div>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -41,9 +41,9 @@ function Navbar() {
               <button className="btn btn-outline-success" type="submit">
                 Talk to an Expert
               </button>
-              <button className="btn btn-primary" type="submit">
+              <Link className="btn btn-primary" to='/login' >
                 Log In
-              </button>
+              </Link>
             </form>
           </div>
         </div>
