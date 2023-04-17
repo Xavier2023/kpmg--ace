@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  margin: auto;
+  padding: auto;
+}
+
+.dark {
+  background-color: black;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  
+}
+.Manufacturers-section {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 544px;
+  height: 590px;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.Manufacturer-content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+  
+  
+}
+
+.Manufacturer-content .left-side {
+  width: 40%;
+}
+
+.Manufacturer-content .right-side {
+  width: 40%;
+}
+
+.Manufacturer-content .form-group {
+  margin-top: 24px;
+}
+
+
+.Manufacturer-content input, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+

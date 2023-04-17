@@ -7,6 +7,7 @@ import HeroScreen from "./components/heroScreen";
 import Next from "./components/Next";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
+import ManufacturersForm from "./pages/ManufacturersForm";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Switch>
           <Route exact path='/signup' component={Signup}></Route>
           <Route exact path='/login' component={Login}></Route>
+          <Route exact path='/Manufacturer/Form' component={ManufacturersForm}></Route>
         </Switch>
       </Router>
       
