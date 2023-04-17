@@ -11,6 +11,9 @@ import ContactUs from "./forms/ContactUs";
 import RequestForm from "./forms/RequestForm";
 import ManufacturersForm from "./forms/ManufacturersForm";
 import SupplierForm from "./forms/SupplierForm";
+import Cards from "./components/Cards";
+import Why from "./components/Why";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -30,6 +33,13 @@ function App() {
         </Switch>
       </Router>
       
+      <Navbar />
+      {/* <Message /> */}
+      <HeroScreen />
+      <Next />
+      <Cards />
+      <Why />
+      <Footer />
     </div>
   );
 }

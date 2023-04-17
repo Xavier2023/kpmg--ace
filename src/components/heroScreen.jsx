@@ -1,25 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import background from "../assets/image 4.png";
-import "./heroScreen.css";
+import "./Why.css";
 
-const HeroScreen = () => {
+const Why = () => {
   return (
     <>
-      <div
-        className="bg_image"
-        style={{
-          backgroundImage: `url(${background})`,
-          backgroundSize: "cover",
-          height: "100vh",
-          color: "#f5f5f5",
-        }}
-      >
-        <h1>Digital gateway to a localized supply chain</h1>
+      <div class="bg_image">
+        <img src={background} alt="background" />
+        <h1>
+          Digital gateway to a localized <br /> supply chain
+        </h1>
       </div>
-      ;
     </>
   );
 };
 
-export default HeroScreen;
+export default Why;

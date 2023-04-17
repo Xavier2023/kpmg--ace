@@ -1,0 +1,49 @@
+.whySection {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 669px;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    align-items: end;
+    padding: 24px;
+
+}
+
+.whySection img {
+    width: 100%;
+    height: fit-content;
+    z-index: -3;
+    position: absolute;
+}
+
+.whyContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: white;
+    border-radius: 1000px;
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 40px;
+}
+
+.whyContent h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #00338D;
+    margin: 32px;
+}
+
+.whyContent p {
+    font-size: 24px;
+    font-weight: normal;
+    color: #00338D;
+    text-align: right;
+
+
+}

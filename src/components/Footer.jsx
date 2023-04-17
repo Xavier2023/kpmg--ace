@@ -1,17 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import dan from "../assets/Frame 142.svg";
-import "./Navbar.css";
+import ig from "../assets/instagram.svg";
+import fb from "../assets/facebook.svg";
+import twt from "../assets/twitter.svg";
+import "./Footer.css";
 
-function Navbar() {
+function Footer() {
   return (
     <>
-      <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <div></div>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <div>
-            <Link className="navbar-brand" to="/">
+            <a className="navbar-brand" href=" ">
               <img src={dan} alt="Dan" />
-            </Link>
+            </a>
           </div>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -32,24 +36,25 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/contactus">
+                <a className="nav-link active" aria-current="page" href="/">
                   Contact Us
                 </a>
               </li>
             </ul>
             <form className="d-flex">
+              <img src={ig} alt="ig" />
+              <img src={fb} alt="fb" />
+              <img src={twt} alt="twt" />
               <button className="btn btn-outline-success" type="submit">
                 Talk to an Expert
               </button>
-              <Link className="btn btn-primary" to='/login' >
-                Log In
-              </Link>
             </form>
           </div>
         </div>
       </nav>
+      <div className="copyright">© 2022 Copyright Reserved Policy</div>
     </>
   );
 }
 
-export default Navbar;
+export default Footer;
