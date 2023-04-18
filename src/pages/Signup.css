@@ -69,14 +69,26 @@ i {
 }
 
 .signup-content h4 {
+  color: black;
   font-size: 18px;
   font-weight: 600;
   line-height: 25px;
-  margin-top: 24px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .signup-content input {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 382px;
+  height: 36px;
+  margin-top: 10px;
+  border: 1px solid #D1D3D6;
+  border-radius: 3px;
+}
+
+.signup-content select {
+  display: inline-block;
   box-sizing: border-box;
   width: 382px;
   height: 36px;

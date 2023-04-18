@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './ManufacturerForm.css'
+import './css/ManufacturerForm.css'
 
 const ManufacturersForm = () => {
   return (
@@ -29,7 +29,10 @@ const ManufacturersForm = () => {
               <option value="Industrial Sector">Industrial Sector</option>
             </select>
           </div>
-          <Link to='' >Pervious</Link>
+          <button className='btn'>
+          <Link to='/signup' >Pervious</Link>
+          </button>
+          
         </form>
         <form className="right-side">
           <div className='form-group'>
@@ -51,7 +54,9 @@ const ManufacturersForm = () => {
               <option value="Industrial Sector">Industrial Sector</option>
             </select>
           </div>
+          <button className='btn'>
           <Link to='' >Proceed</Link>
+          </button>
         </form>
       </div>
       </div>
