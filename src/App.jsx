@@ -14,6 +14,9 @@ import SupplierForm from "./forms/SupplierForm";
 import Cards from "./components/Cards";
 import Why from "./components/Why";
 import Footer from "./components/Footer";
+// import Signup from "./pages/Signup";
+// import Login from "./pages/Login";
+// import ManufacturersForm from "./pages/ManufacturersForm";
 
 function App() {
   return (
@@ -40,6 +43,20 @@ function App() {
       <Cards />
       <Why />
       <Footer />
+        <Route exact path="/" component={Navbar}></Route>
+        <Route exact path="/" component={Message}></Route>
+        <Route exact path="/" component={HeroScreen}></Route>
+        <Route exact path="/" component={Next}></Route>
+        <Switch>
+          <Route exact path="/signup" component={Signup}></Route>
+          <Route exact path="/login" component={Login}></Route>
+          <Route
+            exact
+            path="/Manufacturer/Form"
+            component={ManufacturersForm}
+          ></Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
