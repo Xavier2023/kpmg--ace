@@ -14,28 +14,29 @@ import SupplierForm from "./forms/SupplierForm";
 import Cards from "./components/Cards";
 import Why from "./components/Why";
 import Footer from "./components/Footer";
-// import Signup from "./pages/Signup";
-// import Login from "./pages/Login";
-// import ManufacturersForm from "./pages/ManufacturersForm";
 
 function App() {
   return (
     <div className="app">
       <Router>
-        <Route exact path='/' component={Navbar}></Route>
-        <Route exact path='/' component={Message}></Route>
-        <Route exact path='/' component={HeroScreen}></Route>
-        <Route exact path='/' component={Next}></Route>
+        <Route exact path="/" component={Navbar}></Route>
+        <Route exact path="/" component={Message}></Route>
+        <Route exact path="/" component={HeroScreen}></Route>
+        <Route exact path="/" component={Next}></Route>
         <Switch>
-          <Route exact path='/signup' component={Signup}></Route>
-          <Route exact path='/login' component={Login}></Route>
-          <Route exact path='/forms/manufacturer' component={ManufacturersForm}></Route>
-          <Route exact path='/forms/supplier' component={SupplierForm}></Route>
-          <Route exact path='/forms/request' component={RequestForm}></Route>
-          <Route exact path='/contactus' component={ContactUs}></Route>
+          <Route exact path="/signup" component={Signup}></Route>
+          <Route exact path="/login" component={Login}></Route>
+          <Route
+            exact
+            path="/forms/manufacturer"
+            component={ManufacturersForm}
+          ></Route>
+          <Route exact path="/forms/supplier" component={SupplierForm}></Route>
+          <Route exact path="/forms/request" component={RequestForm}></Route>
+          <Route exact path="/contactus" component={ContactUs}></Route>
         </Switch>
       </Router>
-      
+
       <Navbar />
       {/* <Message /> */}
       <HeroScreen />
@@ -43,6 +44,7 @@ function App() {
       <Cards />
       <Why />
       <Footer />
+      <Router>
         <Route exact path="/" component={Navbar}></Route>
         <Route exact path="/" component={Message}></Route>
         <Route exact path="/" component={HeroScreen}></Route>
