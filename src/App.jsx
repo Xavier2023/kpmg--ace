@@ -10,6 +10,7 @@ import Login from "./pages/Login";
 import ContactUs from "./forms/ContactUs";
 import RequestForm from "./forms/RequestForm";
 import ManufacturersForm from "./forms/ManufacturersForm";
+import SupplierForm from "./forms/SupplierForm";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route exact path='/signup' component={Signup}></Route>
           <Route exact path='/login' component={Login}></Route>
           <Route exact path='/forms/manufacturer' component={ManufacturersForm}></Route>
+          <Route exact path='/forms/supplier' component={SupplierForm}></Route>
           <Route exact path='/forms/request' component={RequestForm}></Route>
           <Route exact path='/contactus' component={ContactUs}></Route>
         </Switch>
