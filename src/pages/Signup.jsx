@@ -32,11 +32,11 @@ const Signup = () => {
               <input type="password" name='password'  placeholder='Enter email address'/>
             </div>
             <div>
-              <input type="text" name='category' list='myUL'  placeholder='Choose category'/>
-              <datalist id='myUL'>
-                <option value='Manufacturer'></option>
-                <option value='Supplier'></option>
-              </datalist>
+            <select name="sector" id="industry">
+              <option value="Category">Choose a Category</option>
+              <option value="Manufacturer">Manufacturer</option>
+              <option value="Supplier">Supplier</option>
+            </select>
             </div>
           </form>
           <input type="submit" value="Signup" className=' btn btn-primary'/>

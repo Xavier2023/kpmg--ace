@@ -7,7 +7,9 @@ import HeroScreen from "./components/heroScreen";
 import Next from "./components/Next";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
-import ManufacturersForm from "./pages/ManufacturersForm";
+import ContactUs from "./forms/ContactUs";
+import RequestForm from "./forms/RequestForm";
+import ManufacturersForm from "./forms/ManufacturersForm";
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
         <Switch>
           <Route exact path='/signup' component={Signup}></Route>
           <Route exact path='/login' component={Login}></Route>
-          <Route exact path='/Manufacturer/Form' component={ManufacturersForm}></Route>
+          <Route exact path='/forms/manufacturer' component={ManufacturersForm}></Route>
+          <Route exact path='/forms/request' component={RequestForm}></Route>
+          <Route exact path='/contactus' component={ContactUs}></Route>
         </Switch>
       </Router>
       
