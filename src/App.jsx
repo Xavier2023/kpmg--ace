@@ -1,14 +1,50 @@
 import React from "react";
-// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
 import "./App.css";
-import router from "./routes/routes";
+import RootLayout from "./layouts/RootLayout";
+import LandingPage from "./Pages/Landing-Page";
+import Signup from "./pages/Signup";
+import Login from "./pages/Login";
+import ContactUs from "./forms/ContactUs";
+import RequestForm from "./forms/RequestForm";
+import ManufacturersForm from "./forms/ManufacturersForm";
+import SupplierForm from "./forms/SupplierForm";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route elememt={<RootLayout />}>
+      <Route index element={<LandingPage />} />
+      <Route path="/Signup" element={<Signup />} />
+      <Route path="/Login" element={<Login />} />
+      <Route path="/ContactUs" element={<ContactUs />} />
+      <Route path="/RequestForm" element={<RequestForm />} />
+      <Route path="/ManufacturesForm" element={<ManufacturersForm />} />
+      <Route path="/SupplierForm" element={<SupplierForm />} />
+      {/* <Route path="*" element={<NotFound />} /> */}
+    </Route>
+  )
+);
 
 function App() {
   return (
-    <div className="App">
-      <RouterProvider router={router} />
-    </div>
+    <RouterProvider router={router} />
+    //   <div className="App">
+    //     <header className="App-header">
+    //       <Link to="/">Home</Link>
+    //       <Link to="/Signup">Signup</Link>
+    //       <Link to="/Login">Login</Link>
+    //       <Link to="/ContactUs">Contact Us</Link>
+    //       <Link to="/RequestForm">Request Form</Link>
+    //       <Link to="/ManufacturersForm">Manufacturers Form</Link>
+    //       <Link to="/SupplierForm">Supplier Form</Link>
+    //     </header>
+    //   </div>
+    // </RouterProvider>
   );
 }
 
