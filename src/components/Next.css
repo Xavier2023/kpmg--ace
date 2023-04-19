@@ -5,10 +5,11 @@
     font-style: normal;
     margin: auto;
     padding: auto;
+
 }
 
 .nextSection {
-    display: flex;
+    /* display: flex; */
     width: 100%;
     height: max-content;
     margin: 0px 0px 0px 0px;
@@ -18,7 +19,7 @@
 }
 
 .nextContent {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     background-color: #00338D;
     color: #fff;
@@ -31,8 +32,10 @@
 
 .nextContent h1 {
     font-size: 32px;
+    color: #fff;
 }
 
 .nextContent p {
     font-size: 24px;
+    color: #fff;
 }
