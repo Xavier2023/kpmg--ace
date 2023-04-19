@@ -1,0 +1,12 @@
+.message {
+  position: fixed;
+  position: -webkit-sticky;
+  z-index: 999;
+  display: flex;
+  background-color: #00338D;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-top: 560px;
+  margin-left: 1440px;
+}

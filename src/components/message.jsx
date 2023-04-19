@@ -1,9 +1,10 @@
 import React from 'react'
+import './message.css'
 
 const Message = () => {
   return (
-    <div>
-      <h1>Message</h1>
+    <div className='message'>
+      <i class="fa fa-comment-dots"></i>
     </div>
   )
 }
