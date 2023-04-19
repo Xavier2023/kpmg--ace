@@ -34,13 +34,18 @@
     flex-direction: column;
     align-items: flex-end;
     background-color: white;
-    border-radius: 1000px;
+    border-radius: 100%;
     width: max-content;
     height: max-content;
     position: absolute;
-    top: 0;
-    right: 0;
-    padding: 40px;
+    top: -10px;
+    bottom: 150px;
+    right: -140px;
+    padding-top: 150px;
+    padding-left: 80px;
+    padding-bottom: 90px;
+    padding-right: 170px;
+    
 }
 
 .whyContent h1 {
@@ -54,7 +59,12 @@
     font-size: 24px;
     font-weight: normal;
     color: #00338D;
-    text-align: right;
+}
 
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: justify;
 
 }

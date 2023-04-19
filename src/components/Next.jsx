@@ -11,7 +11,7 @@ const Next = () => {
           <p>
             KPMG Ace is an interactive web platform, powered by blockchain
             technology to lead technological innovation local supply chain space
-            in Nigeria. KPMG Ace gives clients access to a wide array of local
+            in Nigeria. <br /> KPMG Ace gives clients access to a wide array of local
             suppliers across various sectors in Nigeria to provide substitutes
             to imported products. The platform also generates customer insights
             on the local supply chain. The net result is greater interaction

@@ -9,7 +9,7 @@
 
 .navbar {
     background: #fff;
-    height: 80px;
+    height: 78.82px;
     display: flex;
     padding: 10px;
     justify-content: space-between;
@@ -39,7 +39,7 @@
     text-align: center;
     width: 60vw;
     justify-content: end;
-    margin-right: 2rem;
+    margin-right: 3rem;
 }
 
 /* .navbar-logo {
@@ -90,6 +90,7 @@
     display: none;
 } */
 
+ 
 .d-flex {
     display: flex;
     justify-content: space-between;
