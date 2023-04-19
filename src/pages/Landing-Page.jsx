@@ -1,4 +1,5 @@
 import React from "react";
+import Message from "../components/message";
 import Navbar from "../components/navbar";
 import HeroScreen from "../components/heroScreen";
 import Next from "../components/Next";
@@ -10,6 +11,7 @@ const LandingPage = () => {
   return (
     <div>
       <Navbar />
+      <Message />
       <HeroScreen />
       <Next />
       <Cards />

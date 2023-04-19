@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./css/request.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import Swal from 'sweetalert2'
+import Swal from 'sweetalert2'
 
 class RequestForm extends Component {
   showAlert = () => {
@@ -52,7 +52,6 @@ class RequestForm extends Component {
             <form className="form">
               <textarea name="message" id="message" cols="55" rows="5">
                 {" "}
-                Request Message
               </textarea>
             </form>
             <button className="btn-proceed" onClick={this.showAlert}>
