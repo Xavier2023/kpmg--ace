@@ -7,13 +7,18 @@
     padding: auto;
 }
 
-.theCards {
+.pageheader {
     display: flex;
     flex-direction: row;
-    margin: 24px;
+    margin: none;
     padding: 40px;
-    /* align-items: center;
-    justify-content: center; */
     row-gap: 40px;
 
+}
+
+.pageheader h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    color: #00338D;
 }
