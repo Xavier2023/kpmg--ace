@@ -6,7 +6,7 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <>
-      <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar fixed-top navbar-expand-lg ">
         <div className="container-fluid">
           <div>
             <Link className="navbar-brand" to="/">
@@ -32,7 +32,11 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/contactus">
+                <a
+                  className="nav-link active"
+                  aria-current="page"
+                  href="/contactus"
+                >
                   Contact Us
                 </a>
               </li>
@@ -41,7 +45,7 @@ function Navbar() {
               <button className="btn btn-outline-success" type="submit">
                 Talk to an Expert
               </button>
-              <Link className="btn btn-primary" to='/login' >
+              <Link className="btn btn-primary" to="/login">
                 Log In
               </Link>
             </form>

@@ -5,10 +5,11 @@
     font-style: normal;
     margin: auto;
     padding: auto;
+
 }
 
 .nextSection {
-    display: flex;
+    /* display: flex; */
     width: 100%;
     height: max-content;
     margin: 0px 0px 0px 0px;
@@ -18,7 +19,7 @@
 }
 
 .nextContent {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     background: linear-gradient(98.56deg, #00338D 50.54%, rgba(0, 51, 141, 0.925684) 54.26%, rgba(0, 51, 141, 0.0260417) 99.27%, rgba(0, 51, 141, 0.0260416) 100.56%, rgba(0, 51, 141, 0) 100.57%);
     color: white;
@@ -31,13 +32,8 @@
 
 .nextContent h1 {
     font-size: 32px;
-    font-weight: 700;
-    color: white;
-    margin-left: 3px;
 }
 
 .nextContent p {
     font-size: 24px;
-    font-weight: 300px;
-    color: white;
 }
