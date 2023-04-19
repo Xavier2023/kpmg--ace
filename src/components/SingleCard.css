@@ -14,7 +14,7 @@
     height: 320px;
     position: relative;
     align-items: flex-end;
-    /* display: flex; */
+    display: flex;
     overflow: hidden;
 }
 

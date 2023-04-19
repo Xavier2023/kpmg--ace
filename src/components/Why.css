@@ -52,18 +52,20 @@
     font-size: 36px;
     font-weight: bold;
     color: #00338D;
-    margin: 32px;
+    margin-right: 4px;
 }
 
 .whyContent p {
     font-size: 24px;
     font-weight: normal;
     color: #00338D;
+    text-align: right;
 }
 
 .content {
     display: flex;
     flex-direction: column;
+
     align-items: flex-end;
     text-align: justify;
 

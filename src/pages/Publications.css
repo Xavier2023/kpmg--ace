@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    margin: auto;
+    padding: auto;
+
+}
+
+.line {
+  position: sticky;
+  margin-top: 90px;
+  border: 2px solid #E8E9EB;
+}
+.title-bar{
+  display: flex;
+  flex-direction: row;
+  height: 91px;
+  background-color: white;
+}
+
+.title {
+  display: flex;
+  margin-left: 10px;
+}
+.title-bar h1 {
+  margin-left: 10px;
+  color: #00338D;
+  font-weight: 700;
+}
+
+.title-bar a {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.title-bar .fa-arrow-left {
+  color: #00338D;
+  margin-top: 0;
+}
+
+.search-container {
+  margin-right: 44px;
+}
+.search-container form {
+  display: flex;
+}
+.search-container input{
+  box-sizing: border-box;
+  width: 300px;
+  height: 30px;
+  border: 1px solid #d1d3d6;
+  border-left: white;
+  border-right: white;
+}
+
+.search-container button {
+  background-color: white;
+  padding-top: 5px;
+  height: 30px;
+  border: 1px solid #d1d3d6;
+}
+
+.search-container .search{
+  border-right-color:white ;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.search-container .filter{
+  border-left-color:white ;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.search-container button i {
+  color: #666666;
+  font-size: 20px;
+}
+
+.publication-section {
+  background-color: #EBEEF1;
+}
+

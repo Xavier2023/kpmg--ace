@@ -5,7 +5,10 @@ import './Login.css'
 const Login = () => {
   return (
     <div className='login-section'>
+      <Link to="/" >
       <img></img>
+      </Link>
+      
       <h1>KPMG ACE</h1>
       <div className="login-content">
         <div className="user">

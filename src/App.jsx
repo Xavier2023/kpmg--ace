@@ -8,6 +8,7 @@ import {
 import "./App.css";
 import RootLayout from "./layouts/RootLayout";
 import LandingPage from "./Pages/Landing-Page";
+import Publictaion from "./pages/Publictaion";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import ContactUs from "./forms/ContactUs";
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
     <Route elememt={<RootLayout />}>
       <Route index element={<LandingPage />} />
       <Route path="/Signup" element={<Signup />} />
+      <Route path="/publications" element={<Publictaion />} />
       <Route path="/Login" element={<Login />} />
       <Route path="/ContactUs" element={<ContactUs />} />
       <Route path="/RequestForm" element={<RequestForm />} />

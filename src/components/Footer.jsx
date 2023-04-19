@@ -42,9 +42,9 @@ function Footer() {
               </li>
             </ul>
             <form className="d-flex">
-              <img src={ig} alt="ig" />
-              <img src={fb} alt="fb" />
-              <img src={twt} alt="twt" />
+              <a href=""><img src={ig} alt="ig" /></a>
+              <a href=""><img src={fb} alt="fb" /></a>
+              <a href=""><img src={twt} alt="twt" /></a>
               <button className="btn btn-outline-success" type="submit">
                 Talk to an Expert
               </button>
