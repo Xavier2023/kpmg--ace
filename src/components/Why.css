@@ -16,8 +16,6 @@
     align-items: center;
     overflow: hidden;
     align-items: end;
-    padding: 24px;
-
 }
 
 
@@ -30,7 +28,7 @@
 }
 
 .whyContent {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: flex-end;
     background-color: white;
@@ -54,6 +52,7 @@
     color: #00338D;
     margin-right: 4px;
     margin: 32px;
+    text-align: right;
 }
 
 .whyContent p {
@@ -69,4 +68,9 @@
     align-items: flex-end;
     text-align: justify;
 
+}
+
+.whyContent btn {
+    width: 100%;
+    align-self: flex-end;
 }

@@ -15,6 +15,7 @@ import ContactUs from "./forms/ContactUs";
 import RequestForm from "./forms/RequestForm";
 import ManufacturersForm from "./forms/ManufacturersForm";
 import SupplierForm from "./forms/SupplierForm";
+import Services from "./pages/Services";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,6 +28,7 @@ const router = createBrowserRouter(
       <Route path="/RequestForm" element={<RequestForm />} />
       <Route path="/ManufacturesForm" element={<ManufacturersForm />} />
       <Route path="/SupplierForm" element={<SupplierForm />} />
+      <Route path="/Services" element={<Services />} />
       {/* <Route path="*" element={<NotFound />} /> */}
     </Route>
   )

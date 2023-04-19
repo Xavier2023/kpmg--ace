@@ -9,7 +9,7 @@ function Navbar() {
       <nav className="navbar fixed-top navbar-expand-lg ">
         <div className="container-fluid">
           <div>
-            <Link className="navbar-brand" to="/">
+            <Link className="navbar-brand" to="LandingPage">
               <img src={dan} alt="Dan" />
             </Link>
           </div>
@@ -22,7 +22,11 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <a
+                  className="nav-link active"
+                  aria-current="page"
+                  href="Services"
+                >
                   Services
                 </a>
               </li>
