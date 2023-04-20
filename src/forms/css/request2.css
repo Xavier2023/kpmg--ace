@@ -26,7 +26,6 @@
   line-height: 57px;
   font-weight: 400;
   color: #00338D;
-  letter-spacing: -0.02em;
 }
 
 .request-section p {
@@ -60,7 +59,7 @@
   left: 0;
 }
 
-.add-photo-btn {
+.add-photo-btn2 {
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -68,9 +67,9 @@
   background-color: #00338D;
   color: #fff;
   display: block;
-  width: 107px;
-  height: 36px;
-  font-size: 18px;
+  width: 131px;
+  height: 38px;
+  font-size: 12px;
   line-height: 30px;
   float: left;
   margin-bottom: 40px;

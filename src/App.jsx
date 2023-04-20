@@ -13,6 +13,7 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import ContactUs from "./forms/ContactUs";
 import RequestForm from "./forms/RequestForm";
+import RequestForm2 from "./forms/RequestForm2";
 import ManufacturersForm from "./forms/ManufacturersForm";
 import SupplierForm from "./forms/SupplierForm";
 import Services from "./pages/Services";
@@ -26,6 +27,7 @@ const router = createBrowserRouter(
       <Route path="/Login" element={<Login />} />
       <Route path="/ContactUs" element={<ContactUs />} />
       <Route path="/RequestForm" element={<RequestForm />} />
+      <Route path="/RequestForm2" element={<RequestForm2 />} />
       <Route path="/ManufacturesForm" element={<ManufacturersForm />} />
       <Route path="/SupplierForm" element={<SupplierForm />} />
       <Route path="/Services" element={<Services />} />

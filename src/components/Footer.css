@@ -12,6 +12,16 @@
     flex-direction: column;
 }
 
+.mg {
+    padding-top: 41px;
+    margin-left: 50px;
+
+}
+.color {
+    background-color: white;
+}
+
+
 .navbar {
     background: #fff;
     height: 80px;
@@ -56,6 +66,7 @@
 
 .copyright {
     display: flex;
+    padding-left: 40px;
     margin: 10px;
     font-size: 14px;
     color: #333;

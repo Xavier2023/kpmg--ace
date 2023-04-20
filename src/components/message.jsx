@@ -4,7 +4,7 @@ import './message.css'
 const Message = () => {
   return (
     <div className='message'>
-      <i class="fa fa-comment-dots"></i>
+      <i className="fa fa-comment-dots"></i>
     </div>
   )
 }

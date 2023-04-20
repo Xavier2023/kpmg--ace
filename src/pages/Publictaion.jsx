@@ -13,7 +13,7 @@ const Publictaion = () => {
       <div className="line"></div>
       <div className="title-bar">
         <div className="title">
-          <a href="/"><i class="fas fa-arrow-left"></i></a> 
+          <a href="/"><i className="fas fa-arrow-left"></i></a> 
           <h1>Publications</h1>
         </div>
         <div className="search-container">

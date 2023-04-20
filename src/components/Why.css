@@ -28,9 +28,6 @@
 }
 
 .whyContent {
-    /* display: flex; */
-    flex-direction: column;
-    align-items: flex-end;
     background-color: white;
     border-radius: 100%;
     width: max-content;

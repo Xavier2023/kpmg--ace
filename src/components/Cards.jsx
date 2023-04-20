@@ -9,7 +9,6 @@ function Cards() {
     <>
       <div className="theCards">
         <SingleCard />
-
         <SingleCard1 />
       </div>
     </>

@@ -28,14 +28,17 @@
     width: 1098px;
     height: 462px;
     padding: 32px;
+    padding-top: 60px;
 }
 
 .nextContent h1 {
     font-size: 32px;
+    font-weight: 700;
     color: white;
 }
 
 .nextContent p {
     font-size: 24px;
+    font-weight: 300;
     color: white;
 }
