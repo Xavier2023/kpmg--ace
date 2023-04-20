@@ -55,7 +55,7 @@ const ManufacturersForm = () => {
             </select>
           </div>
           <button className='btn'>
-          <Link to='' >Proceed</Link>
+          <Link to='/manufacturersportal' >Proceed</Link>
           </button>
         </form>
       </div>

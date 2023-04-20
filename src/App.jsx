@@ -9,6 +9,9 @@ import "./App.css";
 import RootLayout from "./layouts/RootLayout";
 import LandingPage from "./Pages/Landing-Page";
 import Publictaion from "./pages/Publictaion";
+import ManufacturersPortal from "./pages/ManufacturersPortal";
+import DataAnalysis from "./pages/DataAnalysis";
+import SupplyChainConsultation from "./pages/SupplyChainConsultation";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import ContactUs from "./forms/ContactUs";
@@ -28,7 +31,10 @@ const router = createBrowserRouter(
       <Route path="/ContactUs" element={<ContactUs />} />
       <Route path="/RequestForm" element={<RequestForm />} />
       <Route path="/RequestForm2" element={<RequestForm2 />} />
-      <Route path="/ManufacturesForm" element={<ManufacturersForm />} />
+      <Route path="/ManufacturersForm" element={<ManufacturersForm />} />
+      <Route path="/manufacturersportal" element={<ManufacturersPortal />} />
+      <Route path="/manufacturersportal/data&analysis" element={<DataAnalysis />} />
+      <Route path="/manufacturersportal/supplychainconsultation" element={<SupplyChainConsultation />} />
       <Route path="/SupplierForm" element={<SupplierForm />} />
       <Route path="/Services" element={<Services />} />
       {/* <Route path="*" element={<NotFound />} /> */}

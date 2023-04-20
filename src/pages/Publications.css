@@ -8,16 +8,12 @@
 
 }
 
-.line {
-  position: sticky;
-  margin-top: 90px;
-  border: 2px solid #E8E9EB;
-}
 .title-bar{
   display: flex;
   flex-direction: row;
   height: 91px;
   background-color: white;
+  margin-top: 90px;
 }
 
 .title {

@@ -46,9 +46,9 @@ function Navbar() {
               </li>
             </ul>
             <form className="d-flex">
-              <button className="btn btn-outline-primary" type="submit">
-                Talk to an Expert
-              </button>
+              <Link className="btn btn-outline-primary" to="/contactus" >
+                 Talk to an Expert
+              </Link>
               <Link className="btn btn-primary" to="/login">
                 Log In
               </Link>

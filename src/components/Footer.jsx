@@ -36,7 +36,7 @@ function Footer() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <a className="nav-link active" aria-current="page" href="/contactus">
                   Contact Us
                 </a>
               </li>
@@ -45,9 +45,9 @@ function Footer() {
               <a href=""><img src={ig} alt="ig" /></a>
               <a href=""><img src={fb} alt="fb" /></a>
               <a href=""><img src={twt} alt="twt" /></a>
-              <button className="btn btn-outline-primary" type="submit">
-                Talk to an Expert
-              </button>
+              <Link className="btn btn-outline-primary" to="/contactus" >
+                 Talk to an Expert
+              </Link>
             </form>
           </div>
           <div className="copyright">© 2022 Copyright Reserved Policy</div>
