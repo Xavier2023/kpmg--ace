@@ -27,11 +27,13 @@
 }
 
 .cardContent1 {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     margin: 10px;
     padding: 10px;
     background-color: #fff;
+    align-items: baseline;
+    flex-direction: column-reverse;
 
 }
 

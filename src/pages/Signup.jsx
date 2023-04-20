@@ -12,7 +12,10 @@ const Signup = () => {
 
   return (
     <div className="signup-section">
-      <img></img>
+      <Link to="/">
+        <img></img>
+      </Link>
+
       <h1>KPMG ACE</h1>
       <div className="signup-content">
         <div className="user">

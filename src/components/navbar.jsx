@@ -9,7 +9,7 @@ function Navbar() {
       <nav className="navbar fixed-top navbar-expand-lg ">
         <div className="container-fluid">
           <div>
-            <Link className="navbar-brand" to="LandingPage">
+            <Link className="navbar-brand" to="/">
               <img src={dan} alt="Dan" />
             </Link>
           </div>
