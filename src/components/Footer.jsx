@@ -10,10 +10,10 @@ function Footer() {
   return (
     <>
       <div></div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className=" color navbar-expand-lg navbar-light ">
         <div className="container-fluid">
-          <div>
-            <a className="navbar-brand" href=" ">
+          <div className="mg">
+            <a className="navbar-brand" href="/">
               <img src={dan} alt="Dan" />
             </a>
           </div>
@@ -31,28 +31,29 @@ function Footer() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <a className="nav-link active" aria-current="page" href="/publications">
                   Publications
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <a className="nav-link active" aria-current="page" href="/contactus">
                   Contact Us
                 </a>
               </li>
             </ul>
             <form className="d-flex">
-              <img src={ig} alt="ig" />
-              <img src={fb} alt="fb" />
-              <img src={twt} alt="twt" />
-              <button className="btn btn-outline-success" type="submit">
-                Talk to an Expert
-              </button>
+              <a href=""><img src={ig} alt="ig" /></a>
+              <a href=""><img src={fb} alt="fb" /></a>
+              <a href=""><img src={twt} alt="twt" /></a>
+              <Link className="btn btn-outline-primary" to="/contactus" >
+                 Talk to an Expert
+              </Link>
             </form>
           </div>
+          <div className="copyright">© 2022 Copyright Reserved Policy</div>
         </div>
       </nav>
-      <div className="copyright">© 2022 Copyright Reserved Policy</div>
+      
     </>
   );
 }

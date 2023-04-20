@@ -6,7 +6,7 @@ import "./Why.css";
 const Why = () => {
   return (
     <>
-      <div class="bg_image">
+      <div className="bg_image">
         <img src={background} alt="background" />
         <h1>
           Digital gateway to a localized <br /> supply chain

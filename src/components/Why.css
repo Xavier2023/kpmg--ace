@@ -28,9 +28,6 @@
 }
 
 .whyContent {
-    /* display: flex; */
-    flex-direction: column;
-    align-items: flex-end;
     background-color: white;
     border-radius: 100%;
     width: max-content;
@@ -50,6 +47,7 @@
     font-size: 36px;
     font-weight: bold;
     color: #00338D;
+    margin-right: 4px;
     margin: 32px;
     text-align: right;
 }
@@ -58,6 +56,7 @@
     font-size: 24px;
     font-weight: normal;
     color: #00338D;
+    text-align: right;
 }
 
 .content {

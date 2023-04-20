@@ -8,7 +8,6 @@ function Navbar() {
     <>
       <nav className="navbar fixed-top navbar-expand-lg ">
         <div className="container-fluid">
-          <div>
             <Link className="navbar-brand" to="/">
               <img src={dan} alt="Dan" />
             </Link>
@@ -17,7 +16,7 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <a className="nav-link active tag" aria-current="page" href="/">
                   About Us
                 </a>
               </li>
@@ -31,7 +30,7 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <a className="nav-link active" aria-current="page" href="/publications">
                   Publications
                 </a>
               </li>
@@ -46,9 +45,9 @@ function Navbar() {
               </li>
             </ul>
             <form className="d-flex">
-              <button className="btn btn-outline-success" type="submit">
-                Talk to an Expert
-              </button>
+              <Link className="btn btn-outline-primary" to="/contactus" >
+                 Talk to an Expert
+              </Link>
               <Link className="btn btn-primary" to="/login">
                 Log In
               </Link>

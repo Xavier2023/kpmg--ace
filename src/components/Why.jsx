@@ -6,7 +6,7 @@ import "./heroScreen.css";
 const Why = () => {
   return (
     <>
-      <div class="whySection">
+      <div className="whySection">
         <img src={whyi} alt="background" />
         <div className="whyContent">
           <div className="content">

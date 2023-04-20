@@ -9,11 +9,10 @@
 
 .theCards {
     display: flex;
-    flex-direction: row;
-    margin: 24px;
-    padding: 40px;
+    padding-bottom: 56px;
+    margin-top: 53px;
     /* align-items: center;
     justify-content: center; */
-    row-gap: 40px;
+    /* row-gap: 40px; */
 
 }

@@ -8,10 +8,15 @@ import {
 import "./App.css";
 import RootLayout from "./layouts/RootLayout";
 import LandingPage from "./Pages/Landing-Page";
+import Publictaion from "./pages/Publictaion";
+import ManufacturersPortal from "./pages/ManufacturersPortal";
+import DataAnalysis from "./pages/DataAnalysis";
+import SupplyChainConsultation from "./pages/SupplyChainConsultation";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import ContactUs from "./forms/ContactUs";
 import RequestForm from "./forms/RequestForm";
+import RequestForm2 from "./forms/RequestForm2";
 import ManufacturersForm from "./forms/ManufacturersForm";
 import SupplierForm from "./forms/SupplierForm";
 import Services from "./pages/Services";
@@ -21,10 +26,15 @@ const router = createBrowserRouter(
     <Route elememt={<RootLayout />}>
       <Route index element={<LandingPage />} />
       <Route path="/Signup" element={<Signup />} />
+      <Route path="/publications" element={<Publictaion />} />
       <Route path="/Login" element={<Login />} />
       <Route path="/ContactUs" element={<ContactUs />} />
       <Route path="/RequestForm" element={<RequestForm />} />
-      <Route path="/ManufacturesForm" element={<ManufacturersForm />} />
+      <Route path="/RequestForm2" element={<RequestForm2 />} />
+      <Route path="/ManufacturersForm" element={<ManufacturersForm />} />
+      <Route path="/manufacturersportal" element={<ManufacturersPortal />} />
+      <Route path="/manufacturersportal/data&analysis" element={<DataAnalysis />} />
+      <Route path="/manufacturersportal/supplychainconsultation" element={<SupplyChainConsultation />} />
       <Route path="/SupplierForm" element={<SupplierForm />} />
       <Route path="/Services" element={<Services />} />
       {/* <Route path="*" element={<NotFound />} /> */}
