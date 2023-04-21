@@ -9,7 +9,7 @@
 
 .theCards {
     display: flex;
-    padding-bottom: 56px;
+    margin-bottom: 30px;
     margin-top: 53px;
     /* align-items: center;
     justify-content: center; */
