@@ -40,7 +40,10 @@ const Login = () => {
             Forgot Password?
           </Link>
         </form>
-        <input type="submit" value="Log in" className=' btn btn-primary'/>
+        <button className="btn-login">
+          <Link to='/manufacturersportal'>Log in</Link>
+        </button>
+        
         <p> Don't have an account? <Link to="/signup">Sign up</Link></p>
       </div>
       <div className="footnote">
