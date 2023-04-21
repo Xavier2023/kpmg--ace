@@ -9,7 +9,7 @@ const Why = () => {
       <div className="bg_image">
         <img src={background} alt="background" />
         <h1>
-          Digital gateway to a localized <br /> supply chain
+          Digital gateway to a localized supply <br /> chain
         </h1>
       </div>
     </>

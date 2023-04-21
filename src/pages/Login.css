@@ -101,7 +101,7 @@ i {
 
 }
 
-.login-content .btn {
+.login-content .btn-login {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-size: 14px;
@@ -112,8 +112,17 @@ i {
   height: 43px;
   margin-top: 24px;
   background-color: #1e49e2;
+  border-radius: 6px;
+  border: blue;
 }
 
+.btn-login a {
+  text-decoration: none;
+  color: white;
+}
+.btn-login a:hover {
+  color: white;
+}
 
 
 .footnote {

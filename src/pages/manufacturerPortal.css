@@ -7,6 +7,7 @@
     padding: auto;
 }
 
+
 .title-bar-portal{
   display: grid;
   grid-template-columns: repeat(1, 4fr 1fr);
@@ -79,16 +80,17 @@
 }
 .active-page-data {
   background-color: #FD349C;
-  width: 120px;
+  width: 90px;
   height: 6px;
   border-radius: 4px 4px 0px  0px;
 }
 .active-page-supply {
   background-color: #FD349C;
-  width: 170px;
+  width: 90px;
   height: 6px;
   border-radius: 4px 4px 0px  0px;
 }
+
 .navigation h3 {
   color: #B2B2B2;
   font-size: 14px;
@@ -104,8 +106,21 @@
   border-radius: 6px;
   margin-top: 20px;
   /* margin-left: 30px; */
-
 }
+
+.btn-logout a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-logout:hover {
+  background-color: blue;
+}
+
+.btn-logout a:hover {
+  color: white;
+}
+
 
 .find-supplier-section {
   background-color: #E5E5E5;
@@ -122,6 +137,7 @@
 .search-content h1 {
   font-size: 24px;
   font-weight: 700;
+  color: #333333;
   /* margin-left: 460px; */
 }
 
@@ -162,4 +178,178 @@
 .search-bar button i {
   color: #666666;
   font-size: 20px;
+}
+
+.find-supplier-content {
+  background-color: #E5E5E5;
+  padding-top: 78px;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-bottom: 74px;
+}
+
+.supplier-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 99.3px ;
+  grid-row-gap: 44px;
+
+}
+
+.supplier-container .product-1,
+.supplier-container .product-2,
+.supplier-container .product-3,
+.supplier-container .product-4,
+.supplier-container .product-5,
+.supplier-container .product-6 {
+  background: linear-gradient(
+    116.59deg, #1E49E2 0%, #7213EA 100%
+  );
+  width: 365.97px;
+  height: 188.02px;
+  border-radius: 12px;
+  display: flex;
+}
+
+.supplier-container .product-1 h1,
+.supplier-container .product-2 h1,
+.supplier-container .product-3 h1,
+.supplier-container .product-5 h1,
+.supplier-container .product-6 h1 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 54px;
+  color: white;
+  margin-top: 40px;
+}
+.supplier-container a {
+  text-decoration: none;
+}
+.supplier-container .product-4 h1 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 54px;
+  color: white;
+  margin-top: 10px;
+}
+
+.data-section {
+  background-color: #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  padding-top: 55px;
+}
+
+.data-title h1 {
+  color: #333333;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+}
+
+.data-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto );
+  grid-column-gap: 97px;
+  margin-top: 40px;
+}
+.data-img {
+  background-image: url(../assets/10.png);
+  width: 388.97px;
+  height: 388.07px;
+  margin-left: 72px;
+  margin-top: 0;
+}
+
+.data-content {
+  margin-right: 161px;
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+.data-content p, li {
+  font-size: 24px;
+  font-weight: 300;
+  color: #000000;
+  line-height: 33px;
+}
+
+.data-content h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+  margin-top: 30px;
+}
+
+.data-content .btn {
+  margin-top: 30px;
+  margin-left: 600px;
+}
+
+.data-content .btn a {
+  text-decoration: none;
+  color: #00338D;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+}
+
+.supply-section {
+  background-color: #E5E5E5;
+  padding-top: 55px;
+}
+
+.supply-title h1 {
+  color: #333333;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  margin-left: 600px;
+}
+
+.supply-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto );
+  grid-column-gap: 97px;
+  margin-top: 10px;
+}
+.supply-img {
+  background-image: url(../assets/11.png);
+  width: 388.97px;
+  height: 388.07px;
+  margin-left: 72px;
+  margin-top: 40px;
+}
+
+.supply-content {
+  margin-right: 161px;
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+.supply-content p, li {
+  font-size: 24px;
+  font-weight: 300;
+  color: #000000;
+  line-height: 33px;
+}
+
+.supply-content h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+  margin-top: 30px;
+}
+
+.supply-content .btn {
+  margin-top: 30px;
+  margin-left: 600px;
+}
+
+.supply-content .btn a {
+  text-decoration: none;
+  color: #00338D;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.04em;
 }
