@@ -57,7 +57,6 @@ function Navbar() {
               </Link>
             </form>
           </div>
-          </div>
       </nav>
     </>
   );
