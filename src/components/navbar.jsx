@@ -8,8 +8,9 @@ function Navbar() {
     <>
       <nav className="navbar fixed-top navbar-expand-lg nav-light ">
         <div className="container-fluid">
+          <div>
             <Link className="navbar-brand" to="/">
-              <img src={dan} alt="Dan" />
+                <img src={dan} alt="Dan" />
             </Link>
           </div>
 
@@ -30,11 +31,7 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a
-                  className="nav-link active"
-                  aria-current="page"
-                  href="/publications"
-                >
+                <a className="nav-link active" aria-current="page" href="/publications">
                   Publications
                 </a>
               </li>
@@ -49,14 +46,15 @@ function Navbar() {
               </li>
             </ul>
             <form className="d-flex">
-              <Link className="btn btn-outline-primary" to="/contactus" >
+              <Link className=" btn btn-outline-primary" to="/contactus" >
                  Talk to an Expert
               </Link>
               <Link className="btn btn-primary" to="/login">
                 Log In
               </Link>
             </form>
-          </div> 
+          </div>
+          </div>
       </nav>
     </>
   );
