@@ -7,7 +7,7 @@
     padding: auto;
 }
 
-.theCard {
+.theCard1 {
     background-image: url('./Rectangle 82.png');
     background-size: cover;
     width: 630px;
@@ -18,7 +18,7 @@
     overflow: hidden;
 }
 
-.theCard img {
+.theCard1 img {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -26,7 +26,7 @@
 
 }
 
-.cardContent {
+.cardContent1{
     /* display: flex; */
     flex-direction: column;
     padding: 10px;
@@ -42,7 +42,7 @@
 
 }
 
-.cardContent h4 {
+.cardContent1 h4 {
     font-size: 24px;
     line-height: 30px;
     color: #00338d;
@@ -51,7 +51,7 @@
     margin-bottom: 0;
 }
 
-.cardContent p {
+.cardContent1 p {
     font-size: 21px;
     font-weight: 300;
     color: black;

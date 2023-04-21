@@ -8,8 +8,8 @@ const Login = () => {
     <div className="login-section">
       <Link to="/">
         <img></img>
-        <h1>KPMG ACE</h1>
       </Link>
+        <h1>KPMG ACE</h1>
 
       <div className="login-content">
         <div className="user">

@@ -6,17 +6,18 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <>
-      <nav className="navbar fixed-top navbar-expand-lg ">
+      <nav className="navbar fixed-top navbar-expand-lg nav-light ">
         <div className="container-fluid">
+          <div>
             <Link className="navbar-brand" to="/">
-              <img src={dan} alt="Dan" />
+                <img src={dan} alt="Dan" />
             </Link>
           </div>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active tag" aria-current="page" href="/">
+                <a className="nav-link active " aria-current="page" href="/">
                   About Us
                 </a>
               </li>
@@ -45,7 +46,7 @@ function Navbar() {
               </li>
             </ul>
             <form className="d-flex">
-              <Link className="btn btn-outline-primary" to="/contactus" >
+              <Link className=" btn btn-outline-primary" to="/contactus" >
                  Talk to an Expert
               </Link>
               <Link className="btn btn-primary" to="/login">
@@ -53,7 +54,7 @@ function Navbar() {
               </Link>
             </form>
           </div>
-        </div>
+          </div>
       </nav>
     </>
   );

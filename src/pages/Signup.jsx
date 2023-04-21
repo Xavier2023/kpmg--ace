@@ -16,8 +16,6 @@ const Signup = () => {
       <Link to="/">
         <img></img>
       </Link>
-
-
       <h1>KPMG ACE</h1>
       <div className="signup-content">
         <div className="user">
@@ -54,7 +52,9 @@ const Signup = () => {
             </select>
           </div>
         </form>
-        <input type="submit" value="Signup" className=" btn btn-primary" />
+        <button className=" btn">
+          <Link to=''> Sign up</Link>
+        </button>
         <p>
           Have an account? <Link to="/login">Log in</Link>
         </p>
