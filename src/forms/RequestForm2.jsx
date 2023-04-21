@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "./css/request2.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Swal from 'sweetalert2'
+import Swal from "sweetalert2";
+
 
 class RequestForm2 extends Component {
   showAlert = () => {
@@ -43,7 +44,9 @@ class RequestForm2 extends Component {
             <form className="form">
               <input type="text" id="path" placeholder="No file selected" />
               <label className="add-photo-btn2">
-                Upload Information<br />Document
+                Upload Information
+                <br />
+                Document
                 <span>
                   <input type="file" id="myfile" name="myfile" />
                 </span>
