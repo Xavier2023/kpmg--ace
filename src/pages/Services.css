@@ -95,8 +95,7 @@
     justify-content: end;
     padding: 10px;
 }
-
-.butt .btn {
+ .started {
     margin-right: 10px;
     margin-bottom: 40px;
     align-self: flex-end;
