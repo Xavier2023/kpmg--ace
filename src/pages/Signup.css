@@ -73,8 +73,6 @@ i {
   font-size: 18px;
   font-weight: 600;
   line-height: 25px;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .signup-content input {
@@ -95,6 +93,7 @@ i {
   margin-top: 10px;
   border: 1px solid #D1D3D6;
   border-radius: 3px;
+  margin-bottom: 1px;
 }
 
 .signup-content p {
@@ -123,8 +122,14 @@ i {
   height: 43px;
   margin-top: 24px;
   background-color: #1e49e2;
+  border-radius: 6px;
+  margin-bottom: 0;
 }
 
+.signup-content .btn a {
+  text-decoration: none; 
+  color: white;
+}
 
 
 .footnote {
