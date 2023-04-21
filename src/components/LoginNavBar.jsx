@@ -18,9 +18,9 @@ const LoginNavBar = () => {
               <h1>Owusu Ayotunde</h1>
               <h2>Manufacturer, Bluelight Technology</h2>
             </div>
-            <div className="initials">
+            <Link to='/manufacturersportal' className="initials">
               <p>OA</p>
-            </div>
+            </Link>
           </div>
         </div>
       </nav>
