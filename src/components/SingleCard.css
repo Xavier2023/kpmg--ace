@@ -37,6 +37,8 @@
     margin-bottom: 23px;
     margin-left: 28px;
     padding-left: 25px;
+    flex-direction: column-reverse;
+
 
 }
 
@@ -53,4 +55,5 @@
     font-size: 21px;
     font-weight: 300;
     color: black;
+    margin-bottom: 4px;
 }
