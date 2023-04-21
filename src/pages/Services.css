@@ -51,8 +51,9 @@ body {
 .theCards {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    column-gap: 80px;
+    width: 80%;
+    gap: 80px;
+    align-self: center;
 
 }
 
