@@ -56,7 +56,7 @@ function Navbar() {
                 Log In
               </Link>
             </form>
-          </div>
+          </div> 
       </nav>
     </>
   );
