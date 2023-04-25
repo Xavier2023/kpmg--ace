@@ -9,9 +9,11 @@ import "./App.css";
 import RootLayout from "./layouts/RootLayout";
 import LandingPage from "./Pages/Landing-Page";
 import Publictaion from "./pages/Publictaion";
+import SuppliersPortal from "./pages/SuppliersPortal";
 import ManufacturersPortal from "./pages/ManufacturersPortal";
 import DataAnalysis from "./pages/DataAnalysis";
 import SupplyChainConsultation from "./pages/SupplyChainConsultation";
+import Auctions from "./pages/Auctions";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import ContactUs from "./forms/ContactUs";
@@ -33,6 +35,8 @@ const router = createBrowserRouter(
       <Route path="/RequestForm2" element={<RequestForm2 />} />
       <Route path="/ManufacturersForm" element={<ManufacturersForm />} />
       <Route path="/manufacturersportal" element={<ManufacturersPortal />} />
+      <Route path="/manufacturersportal/auctions" element={<Auctions />} />
+      <Route path="/suppliersportal" element={<SuppliersPortal />} />
       <Route path="/manufacturersportal/data&analysis" element={<DataAnalysis />} />
       <Route path="/manufacturersportal/supplychainconsultation" element={<SupplyChainConsultation />} />
       <Route path="/SupplierForm" element={<SupplierForm />} />

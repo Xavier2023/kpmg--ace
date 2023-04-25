@@ -72,3 +72,10 @@
     color: #333;
 
 }
+
+#navbarSupportedContent ul li a {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27.24px;
+
+}

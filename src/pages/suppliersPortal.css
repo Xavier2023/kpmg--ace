@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    margin: auto;
+    padding: auto;
+}
+
+.suppliers .title-bar-portal .btn-logout {
+  margin-left: 32px;
+}
+
+.supplier-dashboard {
+  margin-top: 160px;
+  background-color: #FAFAFA;
+}
+.suppliers .title-bar-portal {
+  position: fixed;
+  margin-top: 80px;
+  z-index: 999;
+  padding-bottom: 2px;
+  padding-right: 14px;
+}
+
+.dashboard-header .btn-market {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 0.04em;
+  line-height: 16px;
+  margin-left: 1280px;
+  width: 138px;
+  height: 30px;
+  padding: 7px 14px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid black;
+  margin-bottom: 12px;
+}
+
+.dashboard-header .btn-market a {
+  text-decoration: none;
+  color: #00338D;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.dashboard-header {
+  margin-left: 88px;
+}
+
+.dashboard-header h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  color: #333333;
+}
+
+.suppliers-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr 2fr);
+  padding-left: 90px;
+  padding-top: 40px;
+  padding-bottom: 190px;
+}
+
+.suppliers-container {
+  width: 362.76px;
+  height: 313.17px;
+  background: linear-gradient(116.59deg, #1E49E2 0%, #7213EA 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.suppliers-container {
+  text-decoration: none;
+}
+
+.suppliers-container h2 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 54px;
+  color: white;
+  padding-left: 23px;
+}
+
+.suppliers-content {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-column-gap: 33px;
+  grid-row-gap: 59px;
+  margin-left: 56px;
+}
+
+.suppliers-content .supplier-card {
+  width: 287.75px;
+  height: 171.88px;
+  background: linear-gradient(116.59deg, #1E49E2 0%, #7213EA 100%);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  text-decoration: none;
+}
+
+
+
+.supplier-card h3 {
+  margin-left: 16px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 33px;
+  color: white;
+  margin-top: 50px;
+}
+
+.supplier-card p {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 49px;
+  color: white;
+  margin-left: 244px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

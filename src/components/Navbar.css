@@ -64,6 +64,12 @@
     margin-left: 30px;
 }
 
+#navbarSupportedContentcolor ul li a {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.24px;
+    color: #00338D;
+}
 
 /* .navbar-logo {
     color: #fff;
