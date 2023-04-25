@@ -70,7 +70,7 @@ const Services = () => {
           Get Started
         </Link> */}
         <div className="buttn">
-          <Link className="btn started btn-primary" to="/login">
+          <Link className="btn started btn-primary" to="/signup">
             Get Started
           </Link>
         </div>

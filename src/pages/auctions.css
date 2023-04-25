@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    margin: auto;
+    padding: auto;
+}
+
+.side-nav {
+  background-color: #0C233C;
+  height: 700px;
+  width: 72px;
+  margin-left: 0;
+}
+.side-nav-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 106px;
+  padding-left: 10px;
+  gap: 30px;
+}
+
+.side-nav img {
+  background: url(../assets/edit.png);
+  width: 32px;
+  height: 32px;
+}
+
+.side-nav h4 {
+  font-size: 10px;
+  font-weight: 400;
+  color: white;
+  line-height: 140%;
+  opacity: 0.25;
+}
+
+.side-nav i {
+  opacity: 0.25;
+}
+
+.side-nav-content .icon {
+  text-decoration: none;
+}
+
+
+.side-nav-content .icon-active h4 {
+  opacity: 1;
+  text-decoration: none;
+}
