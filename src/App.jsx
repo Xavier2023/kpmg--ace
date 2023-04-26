@@ -14,6 +14,8 @@ import ManufacturersPortal from "./pages/ManufacturersPortal";
 import DataAnalysis from "./pages/DataAnalysis";
 import SupplyChainConsultation from "./pages/SupplyChainConsultation";
 import Auctions from "./pages/Auctions";
+import Company from "./pages/Company";
+import ProductDetails from "./pages/ProductDetails";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import ContactUs from "./forms/ContactUs";
@@ -41,6 +43,8 @@ const router = createBrowserRouter(
       <Route path="/manufacturersportal/supplychainconsultation" element={<SupplyChainConsultation />} />
       <Route path="/SupplierForm" element={<SupplierForm />} />
       <Route path="/Services" element={<Services />} />
+      <Route path="/company" element={<Company />} />
+      <Route path="/company/product" element={<ProductDetails />} />
       {/* <Route path="*" element={<NotFound />} /> */}
     </Route>
   )
