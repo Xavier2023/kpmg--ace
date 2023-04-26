@@ -44,7 +44,7 @@ const ManufacturersPortal = () => {
       </div>
       <div className="find-supplier-content">
         <div className="supplier-container">
-          <Link className="product-1">
+          <Link to='/agriculturalsector' className="product-1">
             <h1>Agricultural <br /> Products</h1>
           </Link>
           <Link className="product-2">
