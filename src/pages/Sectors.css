@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    margin: auto;
+    padding: auto;
+}
+
+.sector {
+  background-color: #FAFAFA;
+}
+
+.sector .title-bar-portal {
+  padding-top: 20px;
+  padding-right: 40px;
+}
+
+.sector .title-portal h1 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+
+
+.sector .title-bar-portal p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-left: 85px;
+  color: #333333;
+}
+
+.sector .button {
+  display: flex;
+  width: 138px;
+  height: 30px;
+  color: #00338d;
+  border-color: black;
+  padding: 7px, 14px,7px, 14px;
+}
+
+.button a {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.04rem;
+  text-decoration: none;
+  color: #00338d;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 944px;
+  height: 430px;
+  margin-top: 62px;
+  border: 1px solid #E5E5E5;
+  border-radius: 6px;
+}
+
+.product-container .product-content {
+  margin-left: 24px;
+  padding-top: 30px;
+}
+.product-container .product-content h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 140%;
+  color: #333333;
+  margin-right: 36px;
+}
+.product-table {
+  margin-left: 0;
+  margin-top: 20px;
+}
+.product-table th {
+  text-align: left;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.33em;
+  color: #666666;
+  border-bottom: 1px solid #E5E5E5;
+  padding-left: 24px;
+  padding-right: 58px;
+  padding-bottom: 5px;
+
+}
+.product-table td {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #333333;
+  text-align: left;
+  padding-left: 24px;
+  padding-right: 58px;
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+
+
+.sector .mrg {
+  margin-top: 72px;
+  margin-bottom: 53px;
+}
+
+.product-container .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 47px;
+  height: 21px;
+  padding: 4px 8px;
+  color: #1E49E2;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+}
