@@ -14,9 +14,7 @@ const DataAnalysis = () => {
           </a>
           <h1>Manufacturers Portal</h1>
         </div>
-        <button className="btn-auction">
-          Auctions<i className="fa fa-bell"></i>
-        </button>
+        <button className='btn-auction'> <Link to='/manufacturersportal/auctions'>Auctions <i className="fa fa-bell"></i></Link></button>
         <div className="navigation">
           <Link to="/manufacturersportal">
             <h3>Find Supplier</h3>

@@ -13,7 +13,7 @@ const ManufacturersPortal = () => {
           <a href="/"><i className="fas fa-arrow-left"></i></a> 
           <h1>Manufacturers Portal</h1>
         </div>
-        <button className='btn-auction'> <Link to='/manufacturersportal/auctions'>Auctions<i className="fa fa-bell"></i></Link></button>
+        <button className='btn-auction'> <Link to='/manufacturersportal/auctions'>Auctions <i className="fa fa-bell"></i></Link></button>
         <div className="navigation">
           <div className="active">
               <h3>Find Supplier</h3>
