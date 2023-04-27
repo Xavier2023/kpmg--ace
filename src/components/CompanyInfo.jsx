@@ -7,7 +7,7 @@ const CompanyInfo = () => {
       <div className="company-info">
         <div className="company-dp"></div>
         <h1>Irene Chemicals</h1>
-        <Link to='' className='btn btn-primary'>Contact Supplier</Link>
+        <Link to='/contactsupplier' className='btn btn-primary'>Contact Supplier</Link>
       </div>
     </div>
   )

@@ -2,7 +2,7 @@ import React from 'react'
 import LoginNavBar from '../components/LoginNavBar'
 import CompaniesDetails from '../components/CompaniesDetails'
 import CompanyInfo from '../components/CompanyInfo'
-import { Link } from 'react-router-dom'
+
 
 const Company = () => {
   return (

@@ -47,7 +47,7 @@ const ManufacturersPortal = () => {
           <Link to='/agriculturalsector' className="product-1">
             <h1>Agricultural <br /> Products</h1>
           </Link>
-          <Link className="product-2">
+          <Link to='/industrialsector'className="product-2">
             <h1>Chemical <br /> Products</h1>
           </Link>
           <Link className="product-3">

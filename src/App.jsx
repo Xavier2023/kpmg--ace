@@ -17,6 +17,7 @@ import Auctions from "./pages/Auctions";
 import Company from "./pages/Company";
 import ProductDetails from "./pages/ProductDetails";
 import AgriculturalSector from "./pages/AgriculturalSector";
+import IndustrialSector from "./pages/IndustrialSector";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import ContactUs from "./forms/ContactUs";
@@ -24,6 +25,7 @@ import RequestForm from "./forms/RequestForm";
 import RequestForm2 from "./forms/RequestForm2";
 import ManufacturersForm from "./forms/ManufacturersForm";
 import SupplierForm from "./forms/SupplierForm";
+import ContactSupplier from "./pages/ContactSupplier";
 import Services from "./pages/Services";
 
 const router = createBrowserRouter(
@@ -47,7 +49,8 @@ const router = createBrowserRouter(
       <Route path="/company" element={<Company />} />
       <Route path="/company/product" element={<ProductDetails />} />
       <Route path="/agriculturalsector" element={<AgriculturalSector />} />
-      {/* <Route path="/industrialsector" element={<IndustrialSector />} /> */}
+      <Route path="/industrialsector" element={<IndustrialSector />} />
+      <Route path="/contactsupplier" element={<ContactSupplier />} />
       {/* <Route path="*" element={<NotFound />} /> */}
     </Route>
   )
