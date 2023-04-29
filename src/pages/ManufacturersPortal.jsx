@@ -22,7 +22,7 @@ const ManufacturersPortal = () => {
           <Link to='/manufacturersportal/data&analysis'>
             <h3>Data and Analysis</h3>
           </Link>
-          <Link to='manufacturersportal/supplychainconsultation'>
+          <Link to='/manufacturersportal/supplychainconsultation'>
             <h3>Supply Chain Consultation</h3>
           </Link>
         </div>

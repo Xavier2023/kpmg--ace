@@ -9,17 +9,12 @@
   color: #989898;
 }
 
-.dark {
-  background-color: black;
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  
-}
+
 .contact-section {
   display: flex;
   flex-direction: column;
   background-color: white;
+
   width: 590px;
   height: 640px;
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
@@ -87,6 +82,7 @@
   background-color: #00338D;
   margin-top: 25px;
   margin-left: 70px;
+  color: white;
     
 }
 
@@ -94,9 +90,10 @@
   width: 100px;
   height: 40px;
   background-color: #00338D;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 70px;
-    
+  color: white;
+  padding-top: 7px;
 }
 
 .contact-content a {

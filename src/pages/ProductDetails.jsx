@@ -1,9 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 import LoginNavBar from '../components/LoginNavBar'
 import CompanyInfo from '../components/CompanyInfo'
+import SupplierForm from '../forms/SupplierForm'
+
 
 const ProductDetails = () => {
+  const [ showContactUs, setshowContactUs ] = useState(false)
+
+  const onShowClick = e => {
+    setshowContactUs({showContactUs: !showContactUs})
+  }  
   return (
     <div className='company'>
       <LoginNavBar />
@@ -14,6 +22,9 @@ const ProductDetails = () => {
         </div>
       </div>
       <CompanyInfo />
+      {showContactUs ? (
+        <SupplierForm />
+      ) : null}
       <div className="company-container">
         <div className="company-section">
           <div className="company-details">
@@ -51,7 +62,7 @@ const ProductDetails = () => {
             </table>
           </div>
         </div>
-        <Link className="btn mrg btn-outline-primary">
+        <Link onClick={onShowClick} className="btn mrg btn-outline-primary">
         Explore as a supplier
         </Link>
       </div>

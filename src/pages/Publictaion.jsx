@@ -7,6 +7,7 @@ import './Publications.css'
 
 
 const Publictaion = () => {
+  
   return (
     <div>
       <Navbar />

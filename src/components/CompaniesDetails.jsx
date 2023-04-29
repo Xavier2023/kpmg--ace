@@ -1,10 +1,20 @@
 import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import SupplierForm from '../forms/SupplierForm'
 import './companies.css'
 
 const CompaniesDetails = () => {
+  const [ showContactUs, setshowContactUs ] = useState(false)
+
+  const onShowClick = e => {
+    setshowContactUs({showContactUs: !showContactUs})
+  }  
   return (
     <div>
+      {showContactUs ? (
+        <SupplierForm />
+      ) : null}
       <div className="company-container">
         <div className="company-section">
           <div className="company-details">
@@ -42,7 +52,7 @@ const CompaniesDetails = () => {
             </table>
           </div>
         </div>
-        <Link className="btn mrg btn-outline-primary">
+        <Link onClick={onShowClick} className="btn mrg btn-outline-primary">
         Explore as a supplier
       </Link>
       </div>

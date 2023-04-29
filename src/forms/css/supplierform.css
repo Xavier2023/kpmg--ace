@@ -8,6 +8,14 @@
   padding: auto;
   color: #989898;
 }
+.supplies {
+  position: absolute;
+  margin-top: -50px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+}
 
 ::placeholder, select {
   font-size: 14px;
@@ -107,7 +115,7 @@ label {
   width: 103px;
   height: 36px;
 }
-.supplier-content a {
+.supplier-content .btn a {
   text-decoration: none;
   color: white;
   font-weight: 700;

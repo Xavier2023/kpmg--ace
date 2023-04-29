@@ -17,7 +17,7 @@ class RequestForm extends Component {
 
   render() {
     return (
-      <div className="dark">
+      <div className="supplies">
         <div className="request-section">
           <h1>Request Details</h1>
           <p>Please upload documents that contain details of your request</p>
@@ -54,7 +54,7 @@ class RequestForm extends Component {
                 {" "}
               </textarea>
             </form>
-            <button className="btn-proceed" onClick={this.showAlert}>
+            <button className=" btn btn-primary btn-proceed" onClick={this.showAlert}>
               Proceed
             </button>
           </div>

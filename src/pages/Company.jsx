@@ -5,6 +5,7 @@ import CompanyInfo from '../components/CompanyInfo'
 
 
 const Company = () => {
+  
   return (
     <div className='company'>
       <LoginNavBar />
