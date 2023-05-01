@@ -18,7 +18,7 @@ class RequestForm2 extends Component {
 
   render() {
     return (
-      <div className="dark">
+      <div className="supplies">
         <div className="request-section">
           <h1>Request Details</h1>
           <p>Please upload documents that contain details of your request</p>

@@ -1,33 +1,33 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import LoginNavBar from '../components/LoginNavBar'
-import AgriculturalProducts from '../components/products/AgriculturalProducts'
 import { useState } from 'react'
+import LoginNavBar from '../components/LoginNavBar'
+import ChemicalProducts from '../components/products/ChemicalProducts'
 import SupplierForm from '../forms/SupplierForm'
 import './Sectors.css'
 
 
-const AgriculturalSector = () => {
+const IndustrialSector = () => {
   const [ showContactUs, setshowContactUs ] = useState(false)
 
   const onShowClick = e => {
     setshowContactUs({showContactUs: !showContactUs})
-  }  
+  }
   return (
     <div className='sector'>
       <LoginNavBar />
       <div className="title-bar-portal">
         <div className="title-portal">
           <a href="/"><i className="fas fa-arrow-left"></i></a> 
-          <h1>Agricultural Products</h1>
+          <h1>Chemical Products</h1>
         </div>
         <button className='btn button btn-outline-primary'> <Link to='/manufacturersportal/auctions'>Market Analytics</Link></button>
-        <p>Below are the list of companies in the Agricultural Sector</p>  
+        <p>Below are the list of companies in the Industrial Sector</p>  
       </div>
       {showContactUs ? (
         <SupplierForm />
       ) : null}
-      <AgriculturalProducts />
+      <ChemicalProducts />
       <Link onClick={onShowClick} className="btn mrg btn-outline-primary">
         Explore as a supplier
       </Link>
@@ -35,4 +35,4 @@ const AgriculturalSector = () => {
   )
 }
 
-export default AgriculturalSector
+export default IndustrialSector

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import './css/ContactUs.css'
 
 const ContactUs = () => {
@@ -36,7 +35,7 @@ const ContactUs = () => {
             </select>
           </div>
           <button className='btn'>
-          <Link to='/' >Pervious</Link>
+            Pervious
           </button>
           
         </form>
@@ -60,9 +59,7 @@ const ContactUs = () => {
             <label htmlFor="message">Message</label>
             <textarea name="message" id="message" cols="26" rows="6"> Enter Message</textarea>
           </div>
-          <button className='btn'>
-          <Link to='' >Proceed</Link>
-          </button>
+          <input type="submit" value="Procced" className='btn'/>
         </form>
       </div>
       </div>

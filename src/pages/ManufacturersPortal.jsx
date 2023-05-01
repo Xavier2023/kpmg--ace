@@ -13,7 +13,7 @@ const ManufacturersPortal = () => {
           <a href="/"><i className="fas fa-arrow-left"></i></a> 
           <h1>Manufacturers Portal</h1>
         </div>
-        <button className='btn-auction'> <Link to='/manufacturersportal/auctions'>Auctions<i className="fa fa-bell"></i></Link></button>
+        <button className='btn-auction'> <Link to='/manufacturersportal/auctions'>Auctions <i className="fa fa-bell"></i></Link></button>
         <div className="navigation">
           <div className="active">
               <h3>Find Supplier</h3>
@@ -22,7 +22,7 @@ const ManufacturersPortal = () => {
           <Link to='/manufacturersportal/data&analysis'>
             <h3>Data and Analysis</h3>
           </Link>
-          <Link to='manufacturersportal/supplychainconsultation'>
+          <Link to='/manufacturersportal/supplychainconsultation'>
             <h3>Supply Chain Consultation</h3>
           </Link>
         </div>
@@ -47,7 +47,7 @@ const ManufacturersPortal = () => {
           <Link to='/agriculturalsector' className="product-1">
             <h1>Agricultural <br /> Products</h1>
           </Link>
-          <Link className="product-2">
+          <Link to='/industrialsector'className="product-2">
             <h1>Chemical <br /> Products</h1>
           </Link>
           <Link className="product-3">

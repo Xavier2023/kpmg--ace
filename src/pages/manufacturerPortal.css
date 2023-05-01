@@ -51,9 +51,25 @@
 }
 
 .btn-auction i {
-  color: black;
-  font-size: 12px;
+  color: #00338D;
 }
+
+.btn-auction a {
+  text-decoration: none;
+  color: #00338D;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  margin-left: 3px;
+}
+
+.btn-auction i {
+  margin-left: 2px;
+  font-size: 13px;
+}
+
 
 .navigation {
   display: flex;

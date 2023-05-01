@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import LoginNavBar from '../components/LoginNavBar'
+import RequestForm from '../forms/RequestForm'
 import './manufacturerPortal.css'
 
 const SupplyChainConsultation = () => {
+
+  const [ showContactUs, setshowContactUs ] = useState(false)
+
+  const onShowClick = e => {
+    setshowContactUs({showContactUs: !showContactUs})
+  }
+
   return (
     <div>
       <LoginNavBar />
@@ -12,7 +20,7 @@ const SupplyChainConsultation = () => {
           <a href="/"><i className="fas fa-arrow-left"></i></a> 
           <h1>Manufacturers Portal</h1>
         </div>
-        <button className='btn-auction'>Auctions<i className="fa fa-bell"></i></button>
+        <button className='btn-auction'> <Link to='/manufacturersportal/auctions'>Auctions <i className="fa fa-bell"></i></Link></button>
         <div className="navigation">
           <Link to='/manufacturersportal'>
             <h3>Find Supplier</h3>
@@ -27,6 +35,9 @@ const SupplyChainConsultation = () => {
         </div>
         <button className="btn-logout"> <Link to='/'>Log Out</Link> </button>
       </div>
+      {showContactUs ? (
+        <RequestForm />
+      ) : null}
       <div className="supply-section">
         <div className="supply-title">
           <h1>Supply Chain</h1>
@@ -53,8 +64,8 @@ const SupplyChainConsultation = () => {
               <li>A guided process with an array of supply chain assets and accelerators</li>
               <li>The ability to exploit micro supply chains to respond to change</li>
             </ul>
-            <button className="btn btn-outline-primary">
-              <Link to='/requestform'>Request a Proposal</Link></button>
+            <button onClick={onShowClick} className="btn btn-outline-primary">
+              <Link>Request a Proposal</Link></button>
           </div>
         </div>
       </div>

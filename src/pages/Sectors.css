@@ -101,6 +101,35 @@
   padding-top: 15px;
 }
 
+.product-table {
+  margin-left: 0;
+  margin-top: 20px;
+}
+.product-table th {
+  text-align: left;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.33em;
+  color: #666666;
+  border-bottom: 1px solid #E5E5E5;
+  padding-left: 24px;
+  padding-right: 52px;
+  padding-bottom: 5px;
+
+}
+.industrial-table td {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #333333;
+  text-align: left;
+  padding-left: 24px;
+  padding-right: 52px;
+  padding-bottom: 18px;
+  padding-top: 18px;
+}
+
 
 .sector .mrg {
   margin-top: 72px;

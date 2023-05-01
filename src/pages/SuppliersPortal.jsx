@@ -1,9 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import LoginNavBar from '../components/LoginNavBar'
+import RequestForm2 from '../forms/RequestForm2'
 import { Link } from 'react-router-dom'
 import './suppliersPortal.css'
 
 const SuppliersPortal = () => {
+  const [ showContactUs, setshowContactUs ] = useState(false)
+
+  const onShowClick = e => {
+    setshowContactUs({showContactUs: !showContactUs})
+  }  
   return (
     <div className='suppliers'>
       <LoginNavBar />
@@ -16,6 +22,9 @@ const SuppliersPortal = () => {
           <Link to='/'>Log Out</Link> 
         </button>
       </div>
+      {showContactUs ? (
+        <RequestForm2 />
+      ) : null}
       <div className="supplier-dashboard">
         <div className="dashboard-header">
           <button className="btn-market"> 
@@ -48,7 +57,7 @@ const SuppliersPortal = () => {
               <h3>Product Showcase</h3>
               <p>0</p>
             </Link>
-            <Link className="supplier-card">
+            <Link onClick={onShowClick} className="supplier-card">
               <h3>RFx</h3>
               <p>0</p>
             </Link>

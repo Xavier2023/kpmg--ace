@@ -6,7 +6,9 @@ import fb from "../assets/facebook.svg";
 import twt from "../assets/twitter.svg";
 import "./Footer.css";
 
-function Footer() {
+const Footer = () => {
+
+  
   return (
     <>
       <div></div>
@@ -36,7 +38,9 @@ function Footer() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/contactus">
+                <a
+                  className="nav-link active" 
+                  aria-current="page">
                   Contact Us
                 </a>
               </li>

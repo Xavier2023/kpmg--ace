@@ -5,7 +5,7 @@ import './auctions.css'
 
 const Auctions = () => {
   return (
-    <div>
+    <div className='auction'>
       <LoginNavBar />
       <div className="title-bar-portal">
         <div className="title-portal">
@@ -39,9 +39,9 @@ const Auctions = () => {
         </div>
         <div className="auction-section">
           <div className="auction-content">
-            <h3>Bids</h3>
             <div className="search-bar">
               <form action="">
+                <h3>Bids</h3>
                 <button type='submit' className='search'> <i className="fa fa-search"></i> </button>
                 <input type="text" placeholder='Search for bids by name' name='search' />
                 <button className='filter'> <i className="fa fa-filter"></i> </button>

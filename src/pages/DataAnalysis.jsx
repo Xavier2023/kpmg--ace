@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState }from "react";
 import { Link } from "react-router-dom";
+import RequestForm from '../forms/RequestForm'
 import LoginNavBar from "../components/LoginNavBar";
 import "./manufacturerPortal.css";
 
 const DataAnalysis = () => {
+  const [ showContactUs, setshowContactUs ] = useState(false)
+
+  const onShowClick = e => {
+    setshowContactUs({showContactUs: !showContactUs})
+  }  
   return (
     <div>
       <LoginNavBar />
@@ -14,9 +20,7 @@ const DataAnalysis = () => {
           </a>
           <h1>Manufacturers Portal</h1>
         </div>
-        <button className="btn-auction">
-          Auctions<i className="fa fa-bell"></i>
-        </button>
+        <button className='btn-auction'> <Link to='/manufacturersportal/auctions'>Auctions <i className="fa fa-bell"></i></Link></button>
         <div className="navigation">
           <Link to="/manufacturersportal">
             <h3>Find Supplier</h3>
@@ -33,6 +37,9 @@ const DataAnalysis = () => {
           <Link to="/">Log Out</Link>
         </button>
       </div>
+      {showContactUs ? (
+        <RequestForm />
+      ) : null}
       <div className="data-section">
         <div className="data-title">
           <h1>Data and Analytics Consulting Services</h1>
@@ -57,8 +64,8 @@ const DataAnalysis = () => {
                 telecommunications.
               </li>
             </ul>
-            <button className="btn btn-outline-primary">
-              <Link to="/requestform">Request a Proposal</Link>
+            <button onClick={onShowClick} className="btn      btn-outline-primary">
+              <Link>Request a Proposal</Link>
             </button>
           </div>
         </div>

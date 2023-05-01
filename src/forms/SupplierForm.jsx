@@ -3,7 +3,7 @@ import './css/supplierform.css'
 
 const SupplierForm = () => {
   return (
-    <div className='dark'>
+    <div className='supplies'>
       <div className="supplier-section">
         <h1>Local Suppliers Form</h1>
         <div className="supplier-content">
@@ -52,8 +52,10 @@ const SupplierForm = () => {
             </div>
           </form>
           <div className="button">
-            <div className="btn btn-previous"><a href="">Previous</a></div>
-            <div className="btn"><a href="">Proceed</a></div>
+            <div className="btn btn-previous btn-primary"><a href="">Previous</a></div>
+            <form action="">
+              <input className='btn btn-primary' type="submit" value="Proceed" />
+            </form>
           </div>
         </div>
       </div>
