@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    margin: auto;
+    padding: auto;
+}
+
+.compare-supplier-section {
+  background-color: #FAFAFA;
+}
+
+.compare-supplier-container .suppliers-names {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.compare-supplier-container .suppliers-names .btn {
+  width: 185px;
+  height: 30px;
+  padding-top: 2px;
+}
+.compare-supplier-container .suppliers-names a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  
+}
+.compare-supplier-container .names {
+  display: flex;
+  gap: 20px;
+  background-color: white;
+  margin-top: 10px;
+}
+
+.compare-supplier-container .names h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 100px;
+  margin-top: 10px;
+}
+
+.graph {
+  padding-bottom: 40px;
+}

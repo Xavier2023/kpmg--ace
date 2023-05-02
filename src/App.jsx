@@ -14,6 +14,8 @@ import ManufacturersPortal from "./pages/ManufacturersPortal";
 import DataAnalysis from "./pages/DataAnalysis";
 import SupplyChainConsultation from "./pages/SupplyChainConsultation";
 import Auctions from "./pages/Auctions";
+import MarketAnalytics from "./pages/MarketAnalytics";
+import CompareSuppliers from "./pages/CompareSuppliers";
 import Company from "./pages/Company";
 import ProductDetails from "./pages/ProductDetails";
 import AgriculturalSector from "./pages/AgriculturalSector";
@@ -37,6 +39,8 @@ const router = createBrowserRouter(
       <Route path="/suppliersportal" element={<SuppliersPortal />} />
       <Route path="/manufacturersportal/data&analysis" element={<DataAnalysis />} />
       <Route path="/manufacturersportal/supplychainconsultation" element={<SupplyChainConsultation />} />
+      <Route path="/marketanalytics" element={<MarketAnalytics />} />
+      <Route path="/comparesuppliers" element={<CompareSuppliers />} />
       <Route path="/Services" element={<Services />} />
       <Route path="/company" element={<Company />} />
       <Route path="/company/product" element={<ProductDetails />} />

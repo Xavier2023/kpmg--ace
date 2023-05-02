@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    margin: auto;
+    padding: auto;
+}
+
+.feedback-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  width: 467px;
+  height: 304px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+}
+
+.feedback-content h2 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #100711;
+  margin-top: 11px;
+}
+.feedback-content input {
+  width: 300px;
+  height: 60px;
+  margin-top: 15px;
+}
+.feedback-content .rate-us {
+  display: flex;
+  margin-top: 10px;
+}
+
+.feedback-content h3 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: #000000;
+}
+
+.success-icon {
+  background: url(../assets/Group55.png);
+  width: 72px;
+  height: 72px;
+}
+
+.feedback-container .back {
+  width: 137px;
+  height: 38px;
+  margin-left: 220px;
+  margin-bottom: 18px;
+}
+
+.feedback-container .back:hover {
+  color: white;
+}
+
+
+.feedback-container .back  a  {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: #1E49E2;
+  text-decoration: none;
+}
+
+.feedback-container .back  a:hover {
+  color: white;
+}
