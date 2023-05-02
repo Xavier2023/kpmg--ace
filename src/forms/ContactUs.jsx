@@ -1,71 +1,86 @@
-import React from 'react'
-import './css/ContactUs.css'
+import React from "react";
+import "./css/ContactUs.css";
 
 const ContactUs = () => {
   return (
     <div className="dark">
-      <div className='contact-section'>
-      <h1>Contact Us</h1>
-      <div className="contact-content">
-        <form className="left-side">
-          <div className='form-group'>
-            <label htmlFor="name">Inquiry Type</label>
-            <select name="inquiry" id="inquiry">
-              <option value="select">Select</option>
-            </select>
+      <div className="contact-section">
+        <h1>Contact Us</h1>
+        
+        <form className="theForm" action="">
+          <div class="formInputs">
+            <div class="theInput">
+              <label htmlFor="name">Inquiry Type</label> <br />
+              <select id="inquiry" class="form-select">
+                <option selected value="">
+                  select inquiry type
+                </option>
+                <option value="inquiryType">inquiry Type 1</option>
+                <option value="inquiryType">inquiry Type 2</option>
+              </select>
+            </div>
+            <div class="theInput">
+              <label htmlFor="name">Sector</label> <br />
+              <select id="industry" class="form-select">
+                <option selected value="">
+                  select Sector
+                </option>
+                <option value="sectorType">Industrial Sector</option>
+                <option value="sectorType">Manufacture Sector</option>
+              </select>
+            </div>
+            <div class="theInput">
+              <label htmlFor="name">Name</label>
+              <input type="name" name="name" placeholder="Enter Name" />
+            </div>
+            <div class="theInput">
+              <label for="text">Phone Number:</label> <br />
+              <input type="text" id="phone" placeholder="enter Phone Number" />
+            </div>
+            <div class="theInput">
+              <label for="text">Email Address:</label> <br />
+              <input
+                type="text"
+                id="emailAddress"
+                placeholder="enter Email Address"
+              />
+            </div>
+
+            <div class="theInput">
+              <label for="text">Role:</label> <br />
+              <input type="text" id="role" placeholder="enter Role" />
+            </div>
+            <div class="theInput">
+              <label for="text">Company/Organization:</label> <br />
+              <input type="text" id="org" placeholder="enter Role" />
+            </div>
+            <div class="theInput">
+              <label htmlFor="name">Are you a staff of KPMG</label> <br />
+              <select id="inquiry" class="form-select">
+                <option selected value="">
+                  select
+                </option>
+                <option value="response">Yes</option>
+                <option value="response">No</option>
+              </select>
+            </div>
+            <div class="theInput">
+              <label for="text">Message:</label> <br />
+              <input type="text" id="mesage" placeholder="Type your message" />
+            </div>
           </div>
-          <div className='form-group'>
-            <label htmlFor="name">Name</label>
-            <input type="name" name='name'  placeholder='Enter Name' />
+          <div className="theButtons">
+            <button type=" " class="btn-outline-secondary" id="cancelBtn">
+              Cancel
+            </button>
+            <button type="submit" class="primary-btn" id="btn">
+              Sumbit
+            </button>
           </div>
-          <div className='form-group'>
-            <label htmlFor="email">Email Address</label>
-            <input type="email" name='email'  placeholder='Enter Email Adress '/>
-          </div>
-          <div className='form-group'>
-            <label htmlFor="name">Company/Organization</label>
-            <input type="text" name='name'  placeholder='Enter Company/Organization '/>
-          </div>
-          <div className='form-group'>
-            <label htmlFor="name">Are you a staff of KPMG?</label>
-            <select name="staff" id="staffOf">
-              <option value="select">Select</option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
-          </div>
-          <button className='btn'>
-            Pervious
-          </button>
-          
         </form>
-        <form className="right-side">
-          <div className='form-group'>
-            <label htmlFor="name">Select your Location</label>
-            <select name="location" id="location">
-              <option value="select">Select</option>
-              <option value="Industrial Sector">Industrial Sector</option>
-            </select>
-          </div>
-          <div className='form-group'>
-            <label htmlFor="phone">Phone Number</label>
-            <input type="phone" name='phone'  placeholder='Enter Phone Number ' />
-          </div>
-          <div className='form-group'>
-            <label htmlFor="name">Role</label>
-            <input type="text" name='name'  placeholder='Enter Role'/>
-          </div>
-          <div className='form-group'>
-            <label htmlFor="message">Message</label>
-            <textarea name="message" id="message" cols="26" rows="6"> Enter Message</textarea>
-          </div>
-          <input type="submit" value="Procced" className='btn'/>
-        </form>
-      </div>
       </div>
     </div>
-   
-  )
-}
+  );
+};
 
-export default ContactUs
+export default ContactUs;
