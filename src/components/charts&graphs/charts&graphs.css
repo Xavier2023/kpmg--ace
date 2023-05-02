@@ -1,0 +1,30 @@
+
+
+.delivery-chart {
+  background: url(../../assets/image2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 481.1px;
+  height: 298.21px;
+}
+
+.defect-rate-chart {
+  background: url(../../assets/SupplierDefectRate.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 481px;
+  height: 364.79px;
+
+}
+
+.availability-graph {
+  background: url(../../assets/SupplierAvailability1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 645.67px;
+  height: 191px;
+
+}

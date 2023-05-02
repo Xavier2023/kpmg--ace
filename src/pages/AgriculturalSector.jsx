@@ -21,7 +21,7 @@ const AgriculturalSector = () => {
           <a href="/"><i className="fas fa-arrow-left"></i></a> 
           <h1>Agricultural Products</h1>
         </div>
-        <button className='btn button btn-outline-primary'> <Link to='/manufacturersportal/auctions'>Market Analytics</Link></button>
+        <button className='btn button btn-outline-primary'> <Link to='/marketanalytics'>Market Analytics</Link></button>
         <p>Below are the list of companies in the Agricultural Sector</p>  
       </div>
       {showContactUs ? (
