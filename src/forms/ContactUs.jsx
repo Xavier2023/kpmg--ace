@@ -6,7 +6,7 @@ const ContactUs = () => {
     <div className="dark">
       <div className="contact-section">
         <h1>Contact Us</h1>
-        
+
         <form className="theForm" action="">
           <div class="formInputs">
             <div class="theInput">
@@ -64,10 +64,22 @@ const ContactUs = () => {
                 <option value="response">No</option>
               </select>
             </div>
-            <div class="theInput">
-              <label for="text">Message:</label> <br />
-              <input type="text" id="mesage" placeholder="Type your message" />
-            </div>
+          </div>
+          <div class="theInput">
+            <label for="text">Message:</label> <br />
+            <textarea
+              name="mesage"
+              id="mesage"
+              cols="48"
+              placeholder="Type your message"
+              rows="4"
+            ></textarea>
+            {/* <input
+              className="mesage"
+              type="text"
+              id="mesage"
+              placeholder="Type your message"
+            /> */}
           </div>
           <div className="theButtons">
             <button type=" " class="btn-outline-secondary" id="cancelBtn">
