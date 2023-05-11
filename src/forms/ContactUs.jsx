@@ -3,15 +3,15 @@ import "./css/ContactUs.css";
 
 const ContactUs = () => {
 
-  const [name, setName] = useState()
-  const [email, setEmail] = useState()
-  const [phone, setPhone] = useState()
-  const [org, setOrg] = useState()
-  const [role, setRolw] = useState()
-  const [inquiry, setInquiry] = useState()
-  const [sector, setSector] = useState()
-  const [staff, setStaff] = useState()
-  const [message, setMessage] = useState()
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState('')
+  const [org, setOrg] = useState('')
+  const [role, setRolw] = useState('')
+  const [inquiry, setInquiry] = useState('')
+  const [sector, setSector] = useState('')
+  const [staff, setStaff] = useState('')
+  const [message, setMessage] = useState('')
 
   return (
     <div className="dark">
