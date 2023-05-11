@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./css/ContactUs.css";
 
 const ContactUs = () => {
+
+  const [name, setName] = useState()
+  const [email, setEmail] = useState()
+  const [phone, setPhone] = useState()
+  const [org, setOrg] = useState()
+  const [role, setRolw] = useState()
+  const [inquiry, setInquiry] = useState()
+  const [sector, setSector] = useState()
+  const [staff, setStaff] = useState()
+  const [message, setMessage] = useState()
+
   return (
     <div className="dark">
       <div className="contact-section">
@@ -11,9 +22,9 @@ const ContactUs = () => {
           <div class="formInputs">
             <div class="theInput">
               <label htmlFor="name">Inquiry Type</label> <br />
-              <select id="inquiry" class="form-select">
+              <select value={inquiry} class="form-select">
                 <option selected value="">
-                  select inquiry type
+                  Select Inquiry Type
                 </option>
                 <option value="inquiryType">inquiry Type 1</option>
                 <option value="inquiryType">inquiry Type 2</option>
@@ -21,73 +32,65 @@ const ContactUs = () => {
             </div>
             <div class="theInput">
               <label htmlFor="name">Sector</label> <br />
-              <select id="industry" class="form-select">
-                <option selected value="">
-                  select Sector
+              <select value={sector} class="form-select">
+                <option selected value="Select Sector">
+                  Select Sector
                 </option>
                 <option value="sectorType">Industrial Sector</option>
                 <option value="sectorType">Manufacture Sector</option>
               </select>
             </div>
             <div class="theInput">
-              <label htmlFor="name">Name</label>
-              <input type="name" name="name" placeholder="Enter Name" />
+              <label htmlFor="name">Name</label> <br />
+              <input type="name" value={name} placeholder="Enter Name" />
             </div>
             <div class="theInput">
-              <label for="text">Phone Number:</label> <br />
-              <input type="text" id="phone" placeholder="enter Phone Number" />
+              <label htmlFor="phone">Phone Number:</label> <br />
+              <input type="text" value={phone} placeholder="Enter Phone Number" />
             </div>
             <div class="theInput">
               <label for="text">Email Address:</label> <br />
               <input
                 type="text"
-                id="emailAddress"
-                placeholder="enter Email Address"
+                value={email}
+                placeholder="Enter Email Address"
               />
             </div>
 
             <div class="theInput">
               <label for="text">Role:</label> <br />
-              <input type="text" id="role" placeholder="enter Role" />
+              <input type="text" value={role} placeholder="Enter Role" />
+            </div>
+            <div class="theInput flex">
+              <div>
+                <label for="text">Company/Organization:</label> <br />
+                <input type="text" value={org} placeholder="Enter Company/Organization" />
+              </div>
+              <div>
+                <label htmlFor="name">Are you a staff of KPMG</label> <br />
+                <select value={staff} class="form-select">
+                  <option selected value="select">
+                    Select
+                  </option>
+                  <option value="response">Yes</option>
+                  <option value="response">No</option>
+                </select>
+              </div>
             </div>
             <div class="theInput">
-              <label for="text">Company/Organization:</label> <br />
-              <input type="text" id="org" placeholder="enter Role" />
-            </div>
-            <div class="theInput">
-              <label htmlFor="name">Are you a staff of KPMG</label> <br />
-              <select id="inquiry" class="form-select">
-                <option selected value="">
-                  select
-                </option>
-                <option value="response">Yes</option>
-                <option value="response">No</option>
-              </select>
-            </div>
-          </div>
-          <div class="theInput">
             <label for="text">Message:</label> <br />
             <textarea
+              value={message}
               name="mesage"
-              id="mesage"
-              cols="48"
-              placeholder="Type your message"
-              rows="4"
+              cols="18"
+              placeholder="Enter message"
+              rows="5"
             ></textarea>
-            {/* <input
-              className="mesage"
-              type="text"
-              id="mesage"
-              placeholder="Type your message"
-            /> */}
+          </div>
           </div>
           <div className="theButtons">
-            <button type=" " class="btn-outline-secondary" id="cancelBtn">
-              Cancel
-            </button>
-            <button type="submit" class="primary-btn" id="btn">
-              Sumbit
-            </button>
+            <button class="btn btn-primary" >Previous</button>
+            <button class="btn btn-primary">Proceed</button>
           </div>
         </form>
       </div>

@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Login.css";
 
 const Login = () => {
+
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+
   return (
 
     <div className="login-section">
@@ -23,6 +27,9 @@ const Login = () => {
               name="email"
               placeholder="Enter email address"
               required
+              autoComplete="off"
+              // onChange={}
+              value={email}
             />
           </div>
           <div>
@@ -31,6 +38,8 @@ const Login = () => {
               name="password"
               placeholder="Enter your new password"
               required
+              // onChange={}
+              value={password}
             />
           </div>
           <Link
@@ -40,8 +49,11 @@ const Login = () => {
             Forgot Password?
           </Link>
         </form>
-        <button className="btn-login">
-          <Link to='/manufacturersportal'>Log in</Link>
+        <button 
+          className="btn-login"
+          // onSubmit={}
+        >
+          Log in
         </button>
         
         <p> Don't have an account? <Link to="/signup">Sign up</Link></p>

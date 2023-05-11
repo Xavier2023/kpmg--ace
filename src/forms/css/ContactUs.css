@@ -23,8 +23,9 @@
 .contact-section h1 {
   margin-top: 36px;
   margin-left: 26px;
+  margin-bottom: 0;
   font-size: 42px;
-  line-height: 57px;
+  /* line-height: 57px; */
   font-weight: 400;
   color: #00338D;
 }
@@ -41,14 +42,16 @@
   flex-direction: column;
   gap: 10px;
   background-color: white;
-  padding: 24px;
+  margin-left: 30px;
 }
 
 .formInputs {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 40px;
+  column-gap: 70px;
+  row-gap: 15px;
 }
+
 
 
 
@@ -56,8 +59,8 @@
   border: 1px solid #ddd;
   font-size: 14px;
   color: #777;
-  width: 240px;
-
+  width: 230px;
+  height: 36px;
   padding: 12px 20px;
   margin: 5px 0;
   display: inline-block;
@@ -78,6 +81,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  resize: none;
 }
 
 
@@ -86,7 +90,8 @@ textarea {
   border: 1px solid #ddd;
   font-size: 14px;
   color: #777;
-  width: 240px;
+  width: 230px;
+  height: 46px;
   padding: 12px 20px;
   margin: 5px 0;
   display: inline-block;
@@ -95,61 +100,24 @@ textarea {
   box-sizing: border-box;
 }
 
-.mesage {
-  border: 1px solid #ddd;
-  font-size: 14px;
-  color: #777;
-  width: 480px;
-  height: 80px;
-  padding: 12px 20px;
-  margin: 5px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
+
+
 
 .theButtons {
   display: flex;
   flex-direction: row;
   width: 100%;
-  gap: 40px;
+  margin-left: 100px;
+  gap: 170px;
 }
 
-.btn-outline-secondary {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 240px;
-  Height: 40px;
-  color: #00338D;
-  padding: 2px 4px 2px 4px;
-  gap: 12px;
-  border: solid 1px #98A2B3;
-  border-radius: 8px;
-  background-color: transparent;
-  cursor: pointer;
-  margin-right: 10px;
-}
 
-.primary-btn {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 240px;
-  Height: 40px;
-  color: white;
-  padding: 2px 4px 2px 4px;
-  gap: 12px;
-  border-radius: 8px;
-  background-color: #00338D;
-  cursor: pointer;
-  margin-right: 10px;
-}
+
 
 /* 
 .contact-content .left-side {

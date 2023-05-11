@@ -1,14 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Signup.css";
 
 const Signup = () => {
-  // state = {
-  //   email: '',
-  //   password: '',
-  //   password2: '',
-  //   category: '',
-  // }
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [matchPassword, setMatchPassword] = useState('')
+  const [category, setCategory] = useState('')
 
   return (
     <div className="signup-section">
@@ -22,39 +20,50 @@ const Signup = () => {
           <i className="fas fa-user"></i>
         </div>
         <h4>Create an account</h4>
-        <form>
+        <form 
+          // onSubmit={}
+        >
           <div>
             <input
               type="email"
               name="email"
+              value={email}
               placeholder="Enter email address"
+              required
+              // onChange={}
             />
           </div>
           <div>
             <input
               type="password"
               name="password"
+              value={password}
               placeholder="Enter your new password"
+              required
+              // onChange={}
             />
           </div>
           <div>
             <input
               type="password"
               name="password"
-              placeholder="Enter email address"
+              value={matchPassword}
+              placeholder="Re-enter your password"
+              // onChange={}
             />
           </div>
           <div>
-            <select name="sector" id="industry">
+            <select 
+              value={category}
+              // onChange={}
+            >
               <option value="Category">Choose a Category</option>
               <option value="Manufacturer">Manufacturer</option>
               <option value="Supplier">Supplier</option>
             </select>
           </div>
+          <button className=" btn btn-primary">Sign up</button>
         </form>
-        <button className=" btn">
-          <Link to=''> Sign up</Link>
-        </button>
         <p>
           Have an account? <Link to="/login">Log in</Link>
         </p>

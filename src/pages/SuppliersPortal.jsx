@@ -28,7 +28,7 @@ const SuppliersPortal = () => {
       <div className="supplier-dashboard">
         <div className="dashboard-header">
           <button className="btn-market"> 
-            <Link to='/'>Market Analytics</Link> 
+            <Link to='/marketanalytics'>Market Analytics</Link> 
           </button>
           <h3>Dashboard</h3>
         </div>
