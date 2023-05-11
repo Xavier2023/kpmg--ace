@@ -28,7 +28,7 @@ const Auctions = () => {
               <h4>Manage Bids</h4>
             </Link>
             <Link className='icon'>
-              <i class="fa fa-hard-drive"></i>
+              <i className="fa fa-hard-drive"></i>
               <h4>Saved Suppliers</h4>
             </Link>
             <Link className='icon'>

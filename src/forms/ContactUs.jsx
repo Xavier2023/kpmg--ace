@@ -19,8 +19,8 @@ const ContactUs = () => {
         <h1>Contact Us</h1>
 
         <form className="theForm" action="">
-          <div class="formInputs">
-            <div class="theInput">
+          <div className="formInputs">
+            <div className="theInput">
               <label htmlFor="name">Inquiry Type</label> <br />
               <select value={inquiry} class="form-select">
                 <option selected value="">
@@ -30,7 +30,7 @@ const ContactUs = () => {
                 <option value="inquiryType">inquiry Type 2</option>
               </select>
             </div>
-            <div class="theInput">
+            <div className="theInput">
               <label htmlFor="name">Sector</label> <br />
               <select value={sector} class="form-select">
                 <option selected value="Select Sector">
@@ -40,15 +40,15 @@ const ContactUs = () => {
                 <option value="sectorType">Manufacture Sector</option>
               </select>
             </div>
-            <div class="theInput">
+            <div className="theInput">
               <label htmlFor="name">Name</label> <br />
               <input type="name" value={name} placeholder="Enter Name" />
             </div>
-            <div class="theInput">
+            <div className="theInput">
               <label htmlFor="phone">Phone Number:</label> <br />
               <input type="text" value={phone} placeholder="Enter Phone Number" />
             </div>
-            <div class="theInput">
+            <div className="theInput">
               <label for="text">Email Address:</label> <br />
               <input
                 type="text"
@@ -57,11 +57,11 @@ const ContactUs = () => {
               />
             </div>
 
-            <div class="theInput">
+            <div className="theInput">
               <label for="text">Role:</label> <br />
               <input type="text" value={role} placeholder="Enter Role" />
             </div>
-            <div class="theInput flex">
+            <div className="theInput flex">
               <div>
                 <label for="text">Company/Organization:</label> <br />
                 <input type="text" value={org} placeholder="Enter Company/Organization" />
@@ -77,7 +77,7 @@ const ContactUs = () => {
                 </select>
               </div>
             </div>
-            <div class="theInput">
+            <div className="theInput">
             <label for="text">Message:</label> <br />
             <textarea
               value={message}
