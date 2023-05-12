@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./Signup.css";
-import { ToastContainer ,toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 // Validate email and password
 const EMAIL_SIGNIN = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]+$/
@@ -74,6 +74,7 @@ const Signup = () => {
   //   const match = password === matchPassword;
   //   setValidMatch(match);
   // },[password, matchPassword])
+  const navigate = useNavigate();
   
 
   const handleSubmit = (e) => {
@@ -81,6 +82,7 @@ const Signup = () => {
     if(isValid()){
       console.log(email, password, category);
       toast.success('Registration Successful')
+      navigate('/manufacturersform')
     }
     
   }
@@ -91,7 +93,6 @@ const Signup = () => {
         <img></img>
       </Link>
       <h1>KPMG ACE</h1>
-        <ToastContainer />
       <div className="signup-content">
         <div className="user">
           <i className="fas fa-user"></i>
