@@ -22,7 +22,7 @@ const Login = () => {
     return result;
   }
 
-  const handleClick = (e) => {
+  const handleClick = async (e) => {
     e.preventDefault()
     if(validate()) {
       console.log(email, password);
