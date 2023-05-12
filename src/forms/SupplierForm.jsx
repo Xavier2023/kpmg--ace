@@ -62,10 +62,10 @@ const SupplierForm = () => {
             </div>
           </form>
           <div className="button">
-            <div className="btn btn-previous btn-primary"><a href="">Previous</a></div>
-            <form action="">
-              <input className='btn btn-primary' type="submit" value="Proceed" />
-            </form>
+            <button className="btn btn-previous btn-primary"><Link href="">Previous</Link></button>
+            <button className='btn btn-primary'>
+              Proceed
+            </button>
           </div>
         </div>
       </div>

@@ -50,6 +50,23 @@
   margin-top: 25px;
 }
 
+.errmsg {
+  background-color: white;
+  width: 500px;
+  height: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-top: 10px solid red;
+  border-radius: 6px;
+  color: black;
+}
+
+.offscreen {
+  position: absolute;
+  left: -999999px;
+}
 .user {
   display: flex;
   background-color: #FD349C;

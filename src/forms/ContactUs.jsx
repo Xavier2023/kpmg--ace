@@ -22,7 +22,11 @@ const ContactUs = () => {
           <div className="formInputs">
             <div className="theInput">
               <label htmlFor="name">Inquiry Type</label> <br />
-              <select value={inquiry} class="form-select">
+              <select
+                 // onChange={} 
+                value={inquiry} 
+                class="form-select"
+              >
                 <option selected value="">
                   Select Inquiry Type
                 </option>
@@ -32,7 +36,11 @@ const ContactUs = () => {
             </div>
             <div className="theInput">
               <label htmlFor="name">Sector</label> <br />
-              <select value={sector} class="form-select">
+              <select
+                 // onChange={} 
+                value={sector} 
+                class="form-select"
+              >
                 <option selected value="Select Sector">
                   Select Sector
                 </option>
@@ -42,16 +50,27 @@ const ContactUs = () => {
             </div>
             <div className="theInput">
               <label htmlFor="name">Name</label> <br />
-              <input type="name" value={name} placeholder="Enter Name" />
+              <input 
+                type="name" 
+                // onChange={}
+                value={name} 
+                placeholder="Enter Name" 
+              />
             </div>
             <div className="theInput">
               <label htmlFor="phone">Phone Number:</label> <br />
-              <input type="text" value={phone} placeholder="Enter Phone Number" />
+              <input 
+                type="text"
+                 // onChange={} 
+                value={phone} 
+                placeholder="Enter Phone Number" 
+              />
             </div>
             <div className="theInput">
               <label for="text">Email Address:</label> <br />
               <input
                 type="text"
+                // onChange={}
                 value={email}
                 placeholder="Enter Email Address"
               />
@@ -59,16 +78,27 @@ const ContactUs = () => {
 
             <div className="theInput">
               <label for="text">Role:</label> <br />
-              <input type="text" value={role} placeholder="Enter Role" />
+              <input 
+                type="text"
+                // onChange={} 
+                value={role} placeholder="Enter Role" />
             </div>
             <div className="theInput flex">
               <div>
                 <label for="text">Company/Organization:</label> <br />
-                <input type="text" value={org} placeholder="Enter Company/Organization" />
+                <input 
+                  type="text" 
+                  // onChange={}
+                  value={org} 
+                  placeholder="Enter Company/Organization" />
               </div>
               <div>
                 <label htmlFor="name">Are you a staff of KPMG</label> <br />
-                <select value={staff} class="form-select">
+                <select 
+                  value={staff} 
+                  class="form-select"
+                  // onChange={}
+                >
                   <option selected value="select">
                     Select
                   </option>
@@ -81,6 +111,7 @@ const ContactUs = () => {
             <label for="text">Message:</label> <br />
             <textarea
               value={message}
+              // onChange={}
               name="mesage"
               cols="18"
               placeholder="Enter message"
@@ -90,7 +121,12 @@ const ContactUs = () => {
           </div>
           <div className="theButtons">
             <button class="btn btn-primary" >Previous</button>
-            <button class="btn btn-primary">Proceed</button>
+            <button 
+              class="btn btn-primary"
+              // onSubmit={}
+            >
+              Proceed
+            </button>
           </div>
         </form>
       </div>
