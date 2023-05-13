@@ -50,6 +50,23 @@
   margin-top: 25px;
 }
 
+.errmsg {
+  background-color: white;
+  width: 500px;
+  height: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-top: 10px solid red;
+  border-radius: 6px;
+  color: black;
+}
+
+.offscreen {
+  position: absolute;
+  left: -999999px;
+}
 .user {
   display: flex;
   background-color: #FD349C;
@@ -111,7 +128,8 @@ i {
 
 }
 
-.signup-content .btn {
+.signup-content .btn  {
+  color: white;
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-size: 14px;
@@ -124,12 +142,9 @@ i {
   background-color: #1e49e2;
   border-radius: 6px;
   margin-bottom: 0;
+  margin-left: 135px;
 }
 
-.signup-content .btn a {
-  text-decoration: none; 
-  color: white;
-}
 
 
 .footnote {

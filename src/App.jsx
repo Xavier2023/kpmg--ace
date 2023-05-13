@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import RootLayout from "./layouts/RootLayout";
-import LandingPage from "./Pages/Landing-Page";
+import LandingPage from "./pages/Landing-Page";
 import Publictaion from "./pages/Publictaion";
 import SuppliersPortal from "./pages/SuppliersPortal";
 import ManufacturersPortal from "./pages/ManufacturersPortal";
@@ -33,7 +33,7 @@ const router = createBrowserRouter(
       <Route path="/Signup" element={<Signup />} />
       <Route path="/publications" element={<Publictaion />} />
       <Route path="/Login" element={<Login />} />
-      <Route path="/ManufacturersForm" element={<ManufacturersForm />} />
+      <Route path="/manufacturersform" element={<ManufacturersForm />} />
       <Route path="/manufacturersportal" element={<ManufacturersPortal />} />
       <Route path="/manufacturersportal/auctions" element={<Auctions />} />
       <Route path="/suppliersportal" element={<SuppliersPortal />} />
@@ -54,6 +54,7 @@ const router = createBrowserRouter(
 
 function App() {
   return (
+    
     <RouterProvider router={router} />
     //   <div className="App">
     //     <header className="App-header">

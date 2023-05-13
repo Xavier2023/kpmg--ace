@@ -114,12 +114,9 @@ i {
   background-color: #1e49e2;
   border-radius: 6px;
   border: blue;
-}
-
-.btn-login a {
-  text-decoration: none;
   color: white;
 }
+
 .btn-login a:hover {
   color: white;
 }
