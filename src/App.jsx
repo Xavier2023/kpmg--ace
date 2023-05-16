@@ -29,14 +29,17 @@ import Services from "./pages/Services";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route elememt={<RootLayout />}>
+      
+      {/* Public Routes */}
       <Route index element={<LandingPage />} />
       <Route path="/Signup" element={<Signup />} />
       <Route path="/publications" element={<Publictaion />} />
       <Route path="/Login" element={<Login />} />
+
+      {/* Protected Routes for Maufacturers */}
       <Route path="/manufacturersform" element={<ManufacturersForm />} />
       <Route path="/manufacturersportal" element={<ManufacturersPortal />} />
       <Route path="/manufacturersportal/auctions" element={<Auctions />} />
-      <Route path="/suppliersportal" element={<SuppliersPortal />} />
       <Route path="/manufacturersportal/data&analysis" element={<DataAnalysis />} />
       <Route path="/manufacturersportal/supplychainconsultation" element={<SupplyChainConsultation />} />
       <Route path="/marketanalytics" element={<MarketAnalytics />} />
@@ -47,6 +50,11 @@ const router = createBrowserRouter(
       <Route path="/agriculturalsector" element={<AgriculturalSector />} />
       <Route path="/industrialsector" element={<IndustrialSector />} />
       <Route path="/contactsupplier" element={<ContactSupplier />} />
+
+      {/* Protected Route for Suppliers */}
+      <Route path="/suppliersportal" element={<SuppliersPortal />} />
+
+      {/* Catch All */}
       {/* <Route path="*" element={<NotFound />} /> */}
     </Route>
   )

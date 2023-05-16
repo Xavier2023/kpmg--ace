@@ -15,11 +15,13 @@ const Signup = () => {
   const [password, setPassword] = useState('');
  
 
-  const [matchPassword, setMatchPassword] = useState('');
+  const [compare, setCompare] = useState('');
 
 
   const [category, setCategory] = useState('Choose a Category');
 
+
+  // VALIDATION AND ERROR MESSAGES
   const isValid=()=>{
     let isproceed = true;
     let errormessage;
@@ -51,7 +53,7 @@ const Signup = () => {
             isproceed=false;
             toast.warning('Please enter a valid password Must contain uppercase, lowercase, a number and special character like: ! # $ % ')
           }
-        if (password === matchPassword){
+        if (password === compare){
 
         }else{
           isproceed=false;
@@ -123,9 +125,9 @@ const Signup = () => {
             <input
               type="password"
               name="password"
-              value={matchPassword}
+              value={compare}
               placeholder="Re-enter your password"    
-              onChange={(e) => setMatchPassword(e.target.value)}
+              onChange={(e) => setCompare(e.target.value)}
             />
           </div>
           <div>
