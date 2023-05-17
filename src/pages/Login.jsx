@@ -1,8 +1,36 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
+import { toast } from "react-toastify";
 
 const Login = () => {
+
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const navigate = useNavigate()
+
+  const validate = () => {
+    let result=true
+    if(email ==='' || email === null){
+      result=false
+      toast.warning('Please Enter Email');
+    }
+    if(password ==='' || password === null){
+      result=false
+      toast.warning('Please Enter Password');
+    }
+    return result;
+  }
+
+  const handleClick = async (e) => {
+    e.preventDefault()
+    if(validate()) {
+      console.log(email, password);
+      toast.success('Login Successful')
+      navigate('/manufacturersportal')
+    }
+  }
+
   return (
 
     <div className="login-section">
@@ -22,7 +50,9 @@ const Login = () => {
               type="email"
               name="email"
               placeholder="Enter email address"
-              required
+              autoComplete="off"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
             />
           </div>
           <div>
@@ -30,7 +60,8 @@ const Login = () => {
               type="password"
               name="password"
               placeholder="Enter your new password"
-              required
+              onChange={(e) => setPassword(e.target.value)}
+              value={password}
             />
           </div>
           <Link
@@ -40,8 +71,11 @@ const Login = () => {
             Forgot Password?
           </Link>
         </form>
-        <button className="btn-login">
-          <Link to='/manufacturersportal'>Log in</Link>
+        <button 
+          className="btn-login"
+          onClick={handleClick}
+        >
+          Log in
         </button>
         
         <p> Don't have an account? <Link to="/signup">Sign up</Link></p>

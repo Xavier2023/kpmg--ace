@@ -53,7 +53,7 @@ class RequestForm2 extends Component {
               </label>
             </form>
             <form className="form">
-              <textarea name="message" id="message" cols="55" rows="5">
+              <textarea name="message" id="message" cols="50" rows="5">
                 {" "}
               </textarea>
             </form>
