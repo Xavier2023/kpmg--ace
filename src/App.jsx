@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import RootLayout from "./layouts/RootLayout";
-import LandingPage from "./Pages/Landing-Page";
+import LandingPage from "./pages/Landing-Page";
 import Publictaion from "./pages/Publictaion";
 import SuppliersPortal from "./pages/SuppliersPortal";
 import ManufacturersPortal from "./pages/ManufacturersPortal";
