@@ -8,7 +8,7 @@ import axios from "../api/axios";
 const EMAIL_SIGNIN = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]+$/
 const PASSWORD_SIGNIN = /^(?=.*[a-z])(?=.*[0-9]).{6,24}$/
 
-const REGISTER_URL = '/api/v1/register'
+const REGISTER_URL = ('/api/v1/register')
 
 const Signup = () => {
 
@@ -66,43 +66,29 @@ const Signup = () => {
     return isproceed;
 }
 
-
-
-  // useEffect(() => {
-  //   const result = EMAIL_SIGNIN.test(email);
-  //   setValidEmail(result)
-  // },[email])
-
-  // useEffect(() => {
-  //   const result = PASSWORD_SIGNIN.test(password)
-  //   setValidPassword(result)
-  //   const match = password === matchPassword;
-  //   setValidMatch(match);
-  // },[password, matchPassword])
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   
 
-  const handleSubmit = async (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     if(isValid()){
       try {
         const response = await axios.post(REGISTER_URL, JSON.stringify({email, password, compare, category}), 
         {
-          headers: {'Content-Type' : 'application/json'}
+          headers: {'Content-Type' : 'application/json'},
         })
-        console.log(response.data);
-        console.log(JSON.stringify(response));
-      } catch (err) {
-        if (!err?.response) {
+        console.log(JSON.stringify(response.data));
+        toast.success('Registration Successful')
+      } catch (error) {
+        if (!error?.response) {
           toast.error('No Server Response')
-        } else if (err.response?.status === 409) {
+        } else if (error.response?.status === 409) {
           toast.error('User already exists');
         } else {
           toast.error('Registration Failed')
         }
       }
       console.log(email, password, compare, category);
-      toast.success('Registration Successful')
       // navigate('/manufacturersform')
     }
     
@@ -120,21 +106,19 @@ const Signup = () => {
         </div>
         <h4>Create an account</h4>
         <form 
-          onSubmit={handleSubmit}
+          onSubmit={onSubmit}
         >
           <div>
             <input
               type="email"
-              name="email"
-              value={email}
               placeholder="Enter email address"
               onChange={(e) => setEmail(e.target.value)}
+              value={email}
             />
           </div>
           <div>
             <input
               type="password"
-              name="password"
               value={password}
               placeholder="Enter your new password" 
               onChange={(e) => setPassword(e.target.value)}
@@ -143,7 +127,6 @@ const Signup = () => {
           <div>
             <input
               type="password"
-              name="password"
               value={compare}
               placeholder="Re-enter your password"    
               onChange={(e) => setCompare(e.target.value)}

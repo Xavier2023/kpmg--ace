@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import "./css/ManufacturerForm.css";
+import Company from "../pages/Company";
 
 
 const ManufacturersForm = () => {
 
   const [firstName, setFirstName] = useState('');
   const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [org, setOrg] = useState('');
-  const [role, setRolw] = useState('');
-  const [inquiry, setInquiry] = useState('');
+  const [phoneNo, setPhoneNo] = useState('');
+  const [company, setCompany] = useState('');
+  const [role, setRole] = useState('');
+  const [industry, setIndustry] = useState('');
   const [lastName, setLastName] = useState('');
   const [location, setLocation] = useState('');
 
@@ -22,11 +23,11 @@ const ManufacturersForm = () => {
             <div className="manufacturer-form">
               <div>
                 <label htmlFor="name">First Name</label> <br />
-                <input type="name" value={firstName} placeholder="Enter First Name" />
+                <input type="name" value={firstName} placeholder="Enter First Name" onChange={(e) => setFirstName(e.target.value)}/>
               </div>
               <div>
                 <label htmlFor="name">Last Name</label> <br />
-                <input type="name" value={lastName} placeholder="Enter Last Name" />
+                <input type="name" value={lastName} placeholder="Enter Last Name"  onChange={(e) => setLastName(e.target.value)}/>
               </div>
               <div>
                 <label htmlFor="email">Email Address:</label> <br />
@@ -34,28 +35,31 @@ const ManufacturersForm = () => {
                   type="email"
                   value={email}
                   placeholder="Enter Email Address"
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div>
                 <label htmlFor="phone">Phone Number:</label> <br />
                 <input
                   type="phone"
-                  value={phone}
+                  value={phoneNo}
                   placeholder="Enter Phone Number"
+                  onChange={(e) => setPhoneNo(e.target.value)}
+
                 />
               </div>
 
               <div>
                 <label htmlFor="text">Company/Organization:</label> <br />
-                <input type="text" value={org} placeholder="Enter Company/Organization" />
+                <input type="text" value={company} placeholder="Enter Company/Organization" />
               </div>
               <div>
                 <label htmlFor="text">Role:</label> <br />
-                <input type="text" value={role} placeholder="Enter Role" />
+                <input type="text" value={role} placeholder="Enter Role"  onChange={(e) => setRole(e.target.value)} />
               </div>
               <div>
                 <label htmlFor="name">Industry</label> <br />
-                <select value={inquiry} class="form-select">
+                <select value={industry}  onChange={(e) => setIndustry(e.target.value)} class="form-select">
                   <option selected value="">
                     Select Industry
                   </option>
@@ -76,7 +80,7 @@ const ManufacturersForm = () => {
             </div>
             <div className="theButtons">
               <button className="btn btn-primary">Previous</button>
-              <button className="btn btn-primary">Proceed</button>
+              <button onClick={onSubmit} className="btn btn-primary">Proceed</button>
             </div>
           </form>
         </div>
