@@ -1,17 +1,38 @@
 import React, { useState } from "react";
 import "./css/ContactUs.css";
+import axios from "../api/axios";
+
+
+const CONTACTUS_URL = ('/api/v1/contact_us')
 
 const ContactUs = () => {
 
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
-  const [phone, setPhone] = useState('')
-  const [org, setOrg] = useState('')
-  const [role, setRolw] = useState('')
+  const [phoneNo, setPhoneNo] = useState('')
+  const [company, setCompany] = useState('')
+  const [role, setRole] = useState('')
   const [inquiry, setInquiry] = useState('')
-  const [sector, setSector] = useState('')
+  const [location, setLocation] = useState('')
   const [staff, setStaff] = useState('')
   const [message, setMessage] = useState('')
+
+
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post( CONTACTUS_URL, JSON.stringify({name, email, phoneNo, location, company, role, inquiry, staff, message}),
+      {
+        headers: { 'Content-Type' : 'application/json' }
+      })
+      console.log(JSON.stringify(response.data));
+    } catch (error) {
+      
+    }
+    console.log(name, email, phoneNo, location, company, role, inquiry, staff, message);
+
+  }
 
   return (
     <div className="dark">
@@ -23,7 +44,7 @@ const ContactUs = () => {
             <div className="theInput">
               <label htmlFor="name">Inquiry Type</label> <br />
               <select
-                 // onChange={} 
+                 onChange={ e => setInquiry(e.target.value)} 
                 value={inquiry} 
                 class="form-select"
               >
@@ -35,24 +56,24 @@ const ContactUs = () => {
               </select>
             </div>
             <div className="theInput">
-              <label htmlFor="name">Sector</label> <br />
+              <label htmlFor="name">Select Your Location</label> <br />
               <select
-                 // onChange={} 
-                value={sector} 
+                 onChange={ e => setLocation(e.target.value)}
+                value={location} 
                 class="form-select"
               >
                 <option selected value="Select Sector">
-                  Select Sector
+                  Select
                 </option>
-                <option value="sectorType">Industrial Sector</option>
-                <option value="sectorType">Manufacture Sector</option>
+                <option value="Lagos">Lagos</option>
+                <option value="Abuja">Abuja</option>
               </select>
             </div>
             <div className="theInput">
               <label htmlFor="name">Name</label> <br />
               <input 
                 type="name" 
-                // onChange={}
+                onChange={ e => setName(e.target.value)}
                 value={name} 
                 placeholder="Enter Name" 
               />
@@ -61,57 +82,57 @@ const ContactUs = () => {
               <label htmlFor="phone">Phone Number:</label> <br />
               <input 
                 type="text"
-                 // onChange={} 
-                value={phone} 
+                onChange={ e => setPhoneNo(e.target.value)} 
+                value={phoneNo} 
                 placeholder="Enter Phone Number" 
               />
             </div>
             <div className="theInput">
-              <label for="text">Email Address:</label> <br />
+              <label htmlFor="email">Email Address:</label> <br />
               <input
-                type="text"
-                // onChange={}
+                type="email"
+                onChange={ e => setEmail(e.target.value)}
                 value={email}
                 placeholder="Enter Email Address"
               />
             </div>
 
             <div className="theInput">
-              <label for="text">Role:</label> <br />
+              <label htmlFor="text">Role:</label> <br />
               <input 
                 type="text"
-                // onChange={} 
+                onChange={ e => setRole(e.target.value)}
                 value={role} placeholder="Enter Role" />
             </div>
             <div className="theInput flex">
               <div>
-                <label for="text">Company/Organization:</label> <br />
+                <label htmlFor="text">Company/Organization:</label> <br />
                 <input 
                   type="text" 
-                  // onChange={}
-                  value={org} 
+                  onChange={ e => setCompany(e.target.value)}
+                  value={company} 
                   placeholder="Enter Company/Organization" />
               </div>
               <div>
                 <label htmlFor="name">Are you a staff of KPMG</label> <br />
                 <select 
                   value={staff} 
-                  class="form-select"
-                  // onChange={}
+                  className="form-select"
+                  onChange={ e => setStaff(e.target.value)}
                 >
                   <option selected value="select">
                     Select
                   </option>
-                  <option value="response">Yes</option>
-                  <option value="response">No</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
                 </select>
               </div>
             </div>
             <div className="theInput">
-            <label for="text">Message:</label> <br />
+            <label htmlFor="text">Message:</label> <br />
             <textarea
               value={message}
-              // onChange={}
+              onChange={ e => setMessage(e.target.value)}
               name="mesage"
               cols="18"
               placeholder="Enter message"
@@ -120,10 +141,10 @@ const ContactUs = () => {
           </div>
           </div>
           <div className="theButtons">
-            <button class="btn btn-primary" >Previous</button>
+            <button className="btn btn-primary" >Previous</button>
             <button 
-              class="btn btn-primary"
-              // onSubmit={}
+              className="btn btn-primary"
+              onClick={onSubmit}
             >
               Proceed
             </button>

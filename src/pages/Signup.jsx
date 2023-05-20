@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Signup.css";
 import { toast } from "react-toastify";
+import axios from "../api/axios";
 
 // Validate email and password
 const EMAIL_SIGNIN = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]+$/
-const PASSWORD_SIGNIN = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/
+const PASSWORD_SIGNIN = /^(?=.*[a-z])(?=.*[0-9]).{6,24}$/
+
+const REGISTER_URL = ('/api/v1/register')
 
 const Signup = () => {
 
@@ -15,11 +18,13 @@ const Signup = () => {
   const [password, setPassword] = useState('');
  
 
-  const [matchPassword, setMatchPassword] = useState('');
+  const [compare, setCompare] = useState('');
 
 
   const [category, setCategory] = useState('Choose a Category');
 
+
+  // VALIDATION AND ERROR MESSAGES
   const isValid=()=>{
     let isproceed = true;
     let errormessage;
@@ -49,9 +54,9 @@ const Signup = () => {
 
          }else{
             isproceed=false;
-            toast.warning('Please enter a valid password Must contain uppercase, lowercase, a number and special character like: ! # $ % ')
+            toast.warning('Please enter a valid password Must contain uppercase, lowercase and numbers ')
           }
-        if (password === matchPassword){
+        if (password === compare){
 
         }else{
           isproceed=false;
@@ -61,28 +66,30 @@ const Signup = () => {
     return isproceed;
 }
 
-
-
-  // useEffect(() => {
-  //   const result = EMAIL_SIGNIN.test(email);
-  //   setValidEmail(result)
-  // },[email])
-
-  // useEffect(() => {
-  //   const result = PASSWORD_SIGNIN.test(password)
-  //   setValidPassword(result)
-  //   const match = password === matchPassword;
-  //   setValidMatch(match);
-  // },[password, matchPassword])
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   
 
-  const handleSubmit = async (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     if(isValid()){
-      console.log(email, password, category);
-      toast.success('Registration Successful')
-      navigate('/manufacturersform')
+      try {
+        const response = await axios.post(REGISTER_URL, JSON.stringify({email, password, compare, category}), 
+        {
+          headers: {'Content-Type' : 'application/json'},
+        })
+        console.log(JSON.stringify(response.data));
+        toast.success('Registration Successful')
+      } catch (error) {
+        if (!error?.response) {
+          toast.error('No Server Response')
+        } else if (error.response?.status === 409) {
+          toast.error('User already exists');
+        } else {
+          toast.error('Registration Failed')
+        }
+      }
+      console.log(email, password, compare, category);
+      // navigate('/manufacturersform')
     }
     
   }
@@ -99,21 +106,19 @@ const Signup = () => {
         </div>
         <h4>Create an account</h4>
         <form 
-          onSubmit={handleSubmit}
+          onSubmit={onSubmit}
         >
           <div>
             <input
               type="email"
-              name="email"
-              value={email}
               placeholder="Enter email address"
               onChange={(e) => setEmail(e.target.value)}
+              value={email}
             />
           </div>
           <div>
             <input
               type="password"
-              name="password"
               value={password}
               placeholder="Enter your new password" 
               onChange={(e) => setPassword(e.target.value)}
@@ -122,10 +127,9 @@ const Signup = () => {
           <div>
             <input
               type="password"
-              name="password"
-              value={matchPassword}
+              value={compare}
               placeholder="Re-enter your password"    
-              onChange={(e) => setMatchPassword(e.target.value)}
+              onChange={(e) => setCompare(e.target.value)}
             />
           </div>
           <div>
