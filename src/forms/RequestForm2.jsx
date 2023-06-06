@@ -1,11 +1,16 @@
-import React, { Component } from "react";
+import React, {useState} from "react";
+import Quotation from "./formComponent/Quotation";
+import Information from "./formComponent/Information";
+import Proposal from "./formComponent/Proposal";
 import "./css/request2.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Swal from "sweetalert2";
 
 
-class RequestForm2 extends Component {
-  showAlert = () => {
+const RequestForm2 = () => {
+
+
+  const showAlert = () => {
     Swal.fire({
       text: "Form Submitted Successfully",
       icon: "success",
@@ -16,55 +21,27 @@ class RequestForm2 extends Component {
     });
   };
 
-  render() {
     return (
       <div className="supplies">
         <div className="request-section">
           <h1>Request Details</h1>
           <p>Please upload documents that contain details of your request</p>
           <div className="request-content">
-            <form className="form">
-              <input type="text" id="path" placeholder="No file selected" />
-              <label className="add-photo-btn2">
-                Upload Quotation
-                <span>
-                  <input type="file" id="myfile" name="myfile" />
-                </span>
-              </label>
-            </form>
-            <form className="form">
-              <input type="text" id="path" placeholder="No file selected" />
-              <label className="add-photo-btn2">
-                Upload Proposal
-                <span>
-                  <input type="file" id="myfile" name="myfile" />
-                </span>
-              </label>
-            </form>
-            <form className="form">
-              <input type="text" id="path" placeholder="No file selected" />
-              <label className="add-photo-btn2">
-                Upload Information
-                <br />
-                Document
-                <span>
-                  <input type="file" id="myfile" name="myfile" />
-                </span>
-              </label>
-            </form>
+             <Quotation />
+             <Proposal />
+             <Information />
             <form className="form">
               <textarea name="message" id="message" cols="50" rows="5">
                 {" "}
               </textarea>
             </form>
-            <button className="btn-proceed" onClick={this.showAlert}>
+            <button className="btn-proceed" onClick={showAlert}>
               Proceed
             </button>
           </div>
         </div>
       </div>
     );
-  }
 }
 
 export default RequestForm2;

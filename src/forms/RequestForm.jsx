@@ -1,20 +1,16 @@
-import React, { Component } from "react";
-import "./css/request.css";
+import React, {useState} from "react";
+import Quotation from "./formComponent/Quotation";
+import Information from "./formComponent/Information";
+import Proposal from "./formComponent/Proposal";
+import "./css/request2.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Swal from 'sweetalert2'
+import Swal from "sweetalert2";
 
 
-let file = document.getElementById('upload')
+const RequestForm = () => {
 
-file.oninput = () => {
-  let filename = file.files[0].name;
 
-  
-document.querySelector('label').innerText = filename;
-}
-
-class RequestForm extends Component {
-  showAlert = () => {
+  const showAlert = () => {
     Swal.fire({
       text: "Form Submitted Successfully",
       icon: "success",
@@ -25,47 +21,27 @@ class RequestForm extends Component {
     });
   };
 
-  render() {
     return (
       <div className="supplies">
         <div className="request-section">
           <h1>Request Details</h1>
           <p>Please upload documents that contain details of your request</p>
           <div className="request-content">
-            <form className="form" encType="multipart/form-data">
-              <div>
-                <input 
-                  type="file" 
-                  id="upload" 
-                  style={{display: "none"}} 
-                />
-                <label htmlFor="upload">No file selected</label>
-              </div>
-              <div>
-                <input 
-                  type="file" 
-                  id="upload" 
-                  style={{display: "none"}} 
-                />
-                <label htmlFor="upload">No file selected</label>
-              </div>
-              <div>
-                <input 
-                  type="file" 
-                  id="upload" 
-                  style={{display: "none"}} 
-                />
-                <label htmlFor="upload">No file selected</label>
-              </div>
-              <button className=" btn btn-primary btn-proceed">
-              Proceed
-              </button>
+             <Quotation />
+             <Proposal />
+             <Information />
+            <form className="form">
+              <textarea name="message" id="message" cols="50" rows="5">
+                {" "}
+              </textarea>
             </form>
+            <button className="btn-proceed" onClick={showAlert}>
+              Proceed
+            </button>
           </div>
         </div>
       </div>
     );
-  }
 }
 
 export default RequestForm;
