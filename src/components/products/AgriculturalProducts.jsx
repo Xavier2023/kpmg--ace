@@ -16,6 +16,7 @@ const AgriculturalProducts = () => {
       </div>
       <div className="product-table">
         <table>
+          <tbody>
           <tr>
             <th >COMPANY NAME</th>
             <th>SECTOR</th>
@@ -58,6 +59,7 @@ const AgriculturalProducts = () => {
             <td style={{textAlign: 'center'}}>Rice, Grains</td>
             <td><Link className='btn btn-outline-primary'>View</Link></td>
           </tr>
+          </tbody>
         </table>
       </div>
     </div>

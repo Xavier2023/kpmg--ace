@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./css/ContactUs.css";
 import axios from "../api/axios";
+import { useNavigate } from "react-router-dom";
 
 
 const CONTACTUS_URL = ('/api/v1/contact_us')
@@ -18,6 +19,8 @@ const ContactUs = () => {
   const [message, setMessage] = useState('')
 
 
+  const navigate = useNavigate()
+
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -30,6 +33,8 @@ const ContactUs = () => {
     } catch (error) {
       
     }
+
+    navigate('/')
     console.log(name, email, phoneNo, location, company, role, inquiry, staff, message);
 
   }
@@ -120,7 +125,7 @@ const ContactUs = () => {
                   className="form-select"
                   onChange={ e => setStaff(e.target.value)}
                 >
-                  <option selected value="select">
+                  <option value="select">
                     Select
                   </option>
                   <option value="Yes">Yes</option>

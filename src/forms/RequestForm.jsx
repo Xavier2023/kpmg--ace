@@ -3,6 +3,16 @@ import "./css/request.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Swal from 'sweetalert2'
 
+
+let file = document.getElementById('upload')
+
+file.oninput = () => {
+  let filename = file.files[0].name;
+
+  
+document.querySelector('label').innerText = filename;
+}
+
 class RequestForm extends Component {
   showAlert = () => {
     Swal.fire({
@@ -22,41 +32,35 @@ class RequestForm extends Component {
           <h1>Request Details</h1>
           <p>Please upload documents that contain details of your request</p>
           <div className="request-content">
-            <form className="form">
-              <input type="text" id="path" placeholder="No file selected" />
-              <label className="add-photo-btn">
-                Browse
-                <span>
-                  <input type="file" id="myfile" name="myfile" />
-                </span>
-              </label>
-            </form>
-            <form className="form">
-              <input type="text" id="path" placeholder="No file selected" />
-              <label className="add-photo-btn">
-                Browse
-                <span>
-                  <input type="file" id="myfile" name="myfile" />
-                </span>
-              </label>
-            </form>
-            <form className="form">
-              <input type="text" id="path" placeholder="No file selected" />
-              <label className="add-photo-btn">
-                Browse
-                <span>
-                  <input type="file" id="myfile" name="myfile" />
-                </span>
-              </label>
-            </form>
-            <form className="form">
-              <textarea name="message" id="message" cols="50" rows="5">
-                {" "}
-              </textarea>
-            </form>
-            <button className=" btn btn-primary btn-proceed" onClick={this.showAlert}>
+            <form className="form" encType="multipart/form-data">
+              <div>
+                <input 
+                  type="file" 
+                  id="upload" 
+                  style={{display: "none"}} 
+                />
+                <label htmlFor="upload">No file selected</label>
+              </div>
+              <div>
+                <input 
+                  type="file" 
+                  id="upload" 
+                  style={{display: "none"}} 
+                />
+                <label htmlFor="upload">No file selected</label>
+              </div>
+              <div>
+                <input 
+                  type="file" 
+                  id="upload" 
+                  style={{display: "none"}} 
+                />
+                <label htmlFor="upload">No file selected</label>
+              </div>
+              <button className=" btn btn-primary btn-proceed">
               Proceed
-            </button>
+              </button>
+            </form>
           </div>
         </div>
       </div>
