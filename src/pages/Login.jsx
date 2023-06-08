@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
 import { toast } from "react-toastify";
+import axios from "../api/axios";
+
+
+const LOGIN_URL = ('/api/v1/login')
 
 const Login = () => {
 
@@ -25,9 +29,22 @@ const Login = () => {
   const handleClick = async (e) => {
     e.preventDefault()
     if(validate()) {
-      console.log(email, password);
-      toast.success('Login Successful')
-      navigate('/manufacturersportal')
+      try {
+        const response = await axios.post(LOGIN_URL, JSON.stringify({email, password}),
+        {
+          headers: {'Content-Type' : 'application/json'},
+        })
+        console.log(JSON.stringify(response.data.token));
+        toast.success('Login Successful')
+        navigate('/manufacturersportal')
+      } catch (error) {
+        if (!error?.response) {
+          toast.error('No Server Response')
+        } else if (error.response?.status === 404) {
+          toast.error('User not found')
+        }
+      }
+
     }
   }
 

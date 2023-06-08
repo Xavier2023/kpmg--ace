@@ -43,6 +43,26 @@
   margin-left: 26px;
 }
 
+.add-photo-btn1 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  background-color: #00338D;
+  color: #fff;
+  display: block;
+  width: 130px;
+  height: 38px;
+  font-size: 12px;
+  font-weight: 700;
+  float: left;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  border-radius: 5px;
+  padding: 4px 4px;
+}
+
+
 
 form div{
   height: 60px;

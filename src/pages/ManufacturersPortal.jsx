@@ -36,7 +36,7 @@ const ManufacturersPortal = () => {
           <div className="search-bar">
             <form action="">
               <button type='submit' className='search'> <i className="fa fa-search"></i> </button>
-              <input type="text" placeholder='Search Publications' name='search' />
+              <input type="text" placeholder='Search for sector by name' name='search' />
               <button className='filter'> <i className="fa fa-filter"></i> </button>
             </form>
           </div>

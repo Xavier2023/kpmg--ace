@@ -1,6 +1,6 @@
 import React, { useState }from "react";
 import { Link } from "react-router-dom";
-import RequestForm from '../forms/RequestForm'
+import RequestForm2 from '../forms/RequestForm2'
 import LoginNavBar from "../components/LoginNavBar";
 import "./manufacturerPortal.css";
 
@@ -38,7 +38,7 @@ const DataAnalysis = () => {
         </button>
       </div>
       {showContactUs ? (
-        <RequestForm />
+        <RequestForm2 />
       ) : null}
       <div className="data-section">
         <div className="data-title">

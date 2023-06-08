@@ -30,6 +30,7 @@ const ContactUs = () => {
         headers: { 'Content-Type' : 'application/json' }
       })
       console.log(JSON.stringify(response.data));
+      window.location.reload(false)
     } catch (error) {
       
     }

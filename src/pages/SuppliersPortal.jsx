@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import LoginNavBar from '../components/LoginNavBar'
-import RequestForm2 from '../forms/RequestForm2'
+import RequestForm from '../forms/RequestForm'
 import { Link } from 'react-router-dom'
 import './suppliersPortal.css'
 
@@ -23,7 +23,7 @@ const SuppliersPortal = () => {
         </button>
       </div>
       {showContactUs ? (
-        <RequestForm2 />
+        <RequestForm />
       ) : null}
       <div className="supplier-dashboard">
         <div className="dashboard-header">
