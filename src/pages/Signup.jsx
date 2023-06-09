@@ -109,11 +109,12 @@ const Signup = () => {
           onSubmit={onSubmit}
         >
           <div>
-            <input
+            <input 
               type="email"
               placeholder="Enter email address"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
+              autoComplete="off"
             />
           </div>
           <div>
