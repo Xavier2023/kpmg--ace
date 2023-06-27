@@ -55,15 +55,15 @@ const RequestForm2 = () => {
       
     }
 
-    // Swal.fire({
-    //   text: "Form Submitted Successfully",
-    //   icon: "success",
-    //   confirmButtonText: "Back to Homepage",
-    // }).then(function () {
-    //   // Redirect the User
-    //   window.location.href = "/";
-    // });
-    // console.log(file1, file2, file3, message);
+    Swal.fire({
+      text: "Form Submitted Successfully",
+      icon: "success",
+      confirmButtonText: "Back to Homepage",
+    }).then(function () {
+      // Redirect the User
+      window.location.href = "/";
+    });
+    console.log(file1, file2, file3, message);
   };
 
     return (
